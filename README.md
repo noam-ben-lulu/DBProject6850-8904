@@ -2,15 +2,17 @@
 ![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/1671315a-0c3a-4259-ab17-1f6385f1149f)
 
 הישויות בהם נעסוק
+## Entities:
 
-1.**Employees**:
 
--EmployeeID (מזהה העובד, INT)
--First Name (שם פרטי, VARCHAR(50))
--Last Name (שם משפחה, VARCHAR(50))
--PositionID (מזהה התפקיד, INT)
--Salary (משכורת, DECIMAL(10,2))
--DepartmentID (מזהה מחלקה, INT)
+1.**Employees:**:
+
+- EmployeeID (מזהה העובד, INT).
+- First Name (שם פרטי, VARCHAR(50)).
+- Last Name (שם משפחה, VARCHAR(50))
+- PositionID (מזהה התפקיד, INT)
+- Salary (משכורת, DECIMAL(10,2))
+- DepartmentID (מזהה מחלקה, INT)
 
 2.**Positions**:
 PositionID (מזהה התפקיד, INT)
