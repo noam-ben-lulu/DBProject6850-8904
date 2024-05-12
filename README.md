@@ -5,12 +5,12 @@
 
 1.**Employees**:
 
-#EmployeeID (מזהה העובד, INT)
-First Name (שם פרטי, VARCHAR(50))
-Last Name (שם משפחה, VARCHAR(50))
-PositionID (מזהה התפקיד, INT)
-Salary (משכורת, DECIMAL(10,2))
-DepartmentID (מזהה מחלקה, INT)
+-EmployeeID (מזהה העובד, INT)
+-First Name (שם פרטי, VARCHAR(50))
+-Last Name (שם משפחה, VARCHAR(50))
+-PositionID (מזהה התפקיד, INT)
+-Salary (משכורת, DECIMAL(10,2))
+-DepartmentID (מזהה מחלקה, INT)
 
 2.**Positions**:
 PositionID (מזהה התפקיד, INT)
