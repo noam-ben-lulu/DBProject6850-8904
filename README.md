@@ -15,36 +15,36 @@
 - DepartmentID (מזהה מחלקה, INT)
 
 2.**Positions**:
-PositionID (מזהה התפקיד, INT)
-Position Name (כותרת התפקיד, VARCHAR(100))
-Responsibilities (אחריות עיקרית, TEXT)
-Requirements (דרישות לתפקיד, TEXT)
+- PositionID (מזהה התפקיד, INT)
+- Position Name (כותרת התפקיד, VARCHAR(100))
+- Responsibilities (אחריות עיקרית, TEXT)
+- Requirements (דרישות לתפקיד, TEXT)
 
 3. **department**:
-departmentID(INT, מזהה ראשי)
-departmentName (VARCHAR(100))
-Description(TEXT)
+- departmentID(INT, מזהה ראשי)
+- departmentName (VARCHAR(100))
+- Description(TEXT)
 
 4.**Development**:   
 
- DevelopmentIג(INT, מזהה ראשי)
- departmentID (INT, מזהה חיצוני לטבלת מחלקה)
-initiative_type(VARCHAR(100))
-initiative_date(DATE)
+- DevelopmentID(INT, מזהה ראשי)
+- departmentID (INT, מזהה חיצוני לטבלת מחלקה)
+- initiative_type(VARCHAR(100))
+- initiative_date(DATE)
 
 
 5. **Human Resource Management**:
-HRActionID (מזהה פעולת משאבי אנוש, INT PRIMARY KEY)
-ActionType (סוג הפעולה, VARCHAR(100))
-Date (תאריך, DATE)
-Description (תיאור, TEXT)
-EmployeeID (מזהה עובד, INT)
+- HRActionID (מזהה פעולת משאבי אנוש, INT PRIMARY KEY)
+- ActionType (סוג הפעולה, VARCHAR(100))
+- Date (תאריך, DATE)
+- Description (תיאור, TEXT)
+- EmployeeID (מזהה עובד, INT)
 
 
 6. **DATE**: 
-Day(יום, INT)
-Month(חודש, INT)
-Year(שנה, INT)
+- Day(יום, INT)
+- Month(חודש, INT)
+- Year(שנה, INT)
 
 
 
