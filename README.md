@@ -49,13 +49,13 @@
 
 
 
-סכמות
-Employees( EmployeeID , PositionID, DepartmentID, First name, Last name, Salary).
-Positions(PositionID,PositionName, Responsibilities, Requirements)
-Departments(DepartmentID,DepartmentName, Description)
-Development(DevelopmentID,DepartmentID, InitiativeType, InitiativeDate)
-Human Resource Management(HRActionID,EmployeeID, ActionType, Date, Description)
-Date(Day, Month, Year)
+**Schemes**
+- Employees( EmployeeID , PositionID, DepartmentID, First name, Last name, Salary).
+- Positions(PositionID,PositionName, Responsibilities, Requirements)
+- Departments(DepartmentID,DepartmentName, Description)
+- Development(DevelopmentID,DepartmentID, InitiativeType, InitiativeDate)
+- Human Resource Management(HRActionID,EmployeeID, ActionType, Date, Description)
+- Date(Day, Month, Year)
 
 
 
