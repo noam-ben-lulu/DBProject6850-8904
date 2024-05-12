@@ -1,5 +1,6 @@
 # minip_basnat
- ![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/404a76f2-c960-4a29-9644-cc1b8264d212)
+![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/1671315a-0c3a-4259-ab17-1f6385f1149f)
+
 הישויות בהם נעסוק
 1.**Employees**:
 #EmployeeID (מזהה העובד, INT)
