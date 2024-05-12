@@ -6,7 +6,7 @@
 בנוסף תיהיה אופציה לניהול משאבי אנוש עבור איש ספציפי במחלקה עם תיאור הפעולה הנעשית(כגון העלה בשכר ענישה וכדו). 
 
 ## ERD
-![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/1671315a-0c3a-4259-ab17-1f6385f1149f)
+![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/8cf9fead-3e2c-4065-95db-332ce7bba5fc)
 
 ## Entities:
 
@@ -64,4 +64,4 @@
 
 
 ## DSD
-![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/c0914acb-f31a-4e6f-a551-401d7c8c53b5)
+![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/fba2a857-209f-40d7-af18-2798370745f7)
