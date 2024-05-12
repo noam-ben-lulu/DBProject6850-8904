@@ -2,7 +2,7 @@
 זין בעין
 הישויות בהם נעסוק
 1. עובדים (Employees):
-EmployeeID (מזהה העובד, INT)
+#EmployeeID (מזהה העובד, INT)
 First Name (שם פרטי, VARCHAR(50))
 Last Name (שם משפחה, VARCHAR(50))
 PositionID (מזהה התפקיד, INT)
