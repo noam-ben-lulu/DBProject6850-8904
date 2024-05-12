@@ -2,7 +2,9 @@
 ![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/1671315a-0c3a-4259-ab17-1f6385f1149f)
 
 הישויות בהם נעסוק
+
 1.**Employees**:
+
 #EmployeeID (מזהה העובד, INT)
 First Name (שם פרטי, VARCHAR(50))
 Last Name (שם משפחה, VARCHAR(50))
