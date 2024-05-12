@@ -13,12 +13,11 @@ def generate_employee_data(num_records):
         employee_id = ''.join([str(random.randint(0, 9)) for _ in range(9)])
         first_name = fake.first_name()
         last_name = fake.last_name()
-        position_id = random.randint(1, 5)  # Assuming there are 5 positions
+        position_id = random.randint(1, 5)
         salary = random.randint(30000, 100000)
-        department_id = random.randint(1, 3)  # Assuming there are 3 departments
-        positions_id = random.randint(1, 5)  # Assuming there are 5 positions
-        department_id1 = random.randint(1, 3)  # Assuming there are 3 departments
-        data.append((employee_id, first_name, last_name, position_id, salary, department_id, positions_id, department_id1))
+        department_id = random.randint(1, 3)
+        positions_id = random.randint(1, 5)
+        data.append((employee_id, first_name, last_name, position_id, salary, department_id, positions_id))
     return data
 
 # Function to generate fake data for Positions table
@@ -86,7 +85,7 @@ def export_to_excel(data, headers, filename):
 
 # Generate fake data for Employee table and export to Excel
 employee_data = generate_employee_data(200)
-employee_headers = ["Employee ID", "First Name", "Last Name", "Position ID", "Salary", "Department ID", "Positions ID", "Department ID1"]
+employee_headers = ["Employee ID", "First Name", "Last Name", "Position ID", "Salary", "Department ID", "Positions ID"]
 export_to_excel(employee_data, employee_headers, "Employee.xlsx")
 
 # Generate fake data for Positions table and export to Excel
