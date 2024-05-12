@@ -41,26 +41,24 @@ def generate_department_data(num_records):
 # Function to generate fake data for Development table
 def generate_development_data(num_records):
     data = []
-    for _ in range(num_records):
-        department_id = random.randint(1, 3)  # Assuming there are 3 departments
+    for i in range(1,num_records+1):
+        department_id = random.randint(1, 3)
         initiative_type = fake.text(max_nb_chars=50)
         implementation_date = fake.date_this_year()
-        department_id1 = random.randint(1, 3)  # Assuming there are 3 departments
         day, month, year = implementation_date.day, implementation_date.month, implementation_date.year
-        data.append((None, department_id, initiative_type, implementation_date, department_id1, day, month, year))
+        data.append((i, department_id, initiative_type, implementation_date,  day, month, year))
     return data
 
 # Function to generate fake data for HumanResourceManagement table
 def generate_hr_data(num_records):
     data = []
-    for _ in range(num_records):
+    for i in range(1,num_records+1):
         action_type = random.choice(["Recruitment", "Promotion", "Termination"])
         date = fake.date_this_year()
         day, month, year = date.day, date.month, date.year
-        employee_id = random.randint(1, 100)  # Assuming there are 100 employees
-        employee_id1 = random.randint(1, 100)  # Assuming there are 100 employees
+        employee_id = random.randint(1, 100)
         description = fake.text(max_nb_chars=200)
-        data.append((None, action_type, date, day, month, year, employee_id, employee_id1, description))
+        data.append((i, action_type, date, day, month, year, employee_id, description))
     return data
 
 # Function to generate fake data for Date table
@@ -100,12 +98,12 @@ export_to_excel(department_data, department_headers, "Department.xlsx")
 
 # Generate fake data for Development table and export to Excel
 development_data = generate_development_data(200)
-development_headers = ["Development ID", "Department ID", "Initiative Type", "Implementation Date", "Department ID1", "Day", "Month", "Year"]
+development_headers = ["Development ID", "Department ID", "Initiative Type", "Implementation Date",  "Day", "Month", "Year"]
 export_to_excel(development_data, development_headers, "Development.xlsx")
 
 # Generate fake data for HumanResourceManagement table and export to Excel
 hr_data = generate_hr_data(200)
-hr_headers = ["HR Action ID", "Action Type", "Date", "Day", "Month", "Year", "Employee ID", "Employee ID1", "Description"]
+hr_headers = ["HR Action ID", "Action Type", "Date", "Day", "Month", "Year", "Employee ID", "Description"]
 export_to_excel(hr_data, hr_headers, "HumanResourceManagement.xlsx")
 
 # Generate fake data for Date table and export to Excel
