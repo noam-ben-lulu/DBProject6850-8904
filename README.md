@@ -9,13 +9,13 @@ PositionID (מזהה התפקיד, INT)
 Salary (משכורת, DECIMAL(10,2))
 DepartmentID (מזהה מחלקה, INT)
 
-           2. מעמדים (Positions):
+2. מעמדים (Positions):
 PositionID (מזהה התפקיד, INT)
 Position Name (כותרת התפקיד, VARCHAR(100))
 Responsibilities (אחריות עיקרית, TEXT)
 Requirements (דרישות לתפקיד, TEXT)
 
-           3. מחלקה(department):
+3. מחלקה(department):
 מזהה מחלקה (INT, מזהה ראשי)
 שם מחלקה (VARCHAR(100))
 תיאור מחלקה (TEXT)
@@ -35,7 +35,7 @@ Description (תיאור, TEXT)
 EmployeeID (מזהה עובד, INT)
 
 
-          6. תאריך (DATE): 
+6. תאריך (DATE): 
 Day(יום, INT)
 Month(חודש, INT)
 Year(שנה, INT)
@@ -50,55 +50,6 @@ Departments(DepartmentID,DepartmentName, Description)
 Development(DevelopmentID,DepartmentID, InitiativeType, InitiativeDate)
 Human Resource Management(HRActionID,EmployeeID, ActionType, Date, Description)
 Date(Day, Month, Year)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-דאסד 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
