@@ -33,12 +33,11 @@ CREATE TABLE Development (
     DepartmentID   NUMBER(38) NOT NULL,
     InitiativeType VARCHAR2(100) NOT NULL,
     ImplementationDate DATE NOT NULL,
-    DepartmentID1  NUMBER(38),
     Day            NUMBER(38) NOT NULL,
     Month          NUMBER(38) NOT NULL,
     Year           NUMBER(38) NOT NULL,
     CONSTRAINT pk_Development PRIMARY KEY (DevelopmentID),
-    CONSTRAINT fk_Development FOREIGN KEY (DepartmentID1)
+    CONSTRAINT fk_Development FOREIGN KEY (DepartmentID)
         REFERENCES Department (DepartmentID)
         ON DELETE CASCADE,
     CONSTRAINT fk_Development2 FOREIGN KEY (Day, Month, Year)
