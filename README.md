@@ -49,7 +49,7 @@ Noam Ben-Lulu 327796850.
 - EmployeeID (מזהה עובד, INT)
 
 
-6. **DATE**: 
+6. **DateInfo**: 
 - Day(יום, INT)
 - Month(חודש, INT)
 - Year(שנה, INT)
