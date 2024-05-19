@@ -5,8 +5,6 @@ CREATE TABLE Employee (
     PositionID     NUMBER(38) NOT NULL,
     Salary         NUMBER(38) NOT NULL,
     DepartmentID   NUMBER(38) NOT NULL,
-    PositionsID    NUMBER(38) NOT NULL,
-    DepartmentID1  NUMBER(38) NOT NULL,
     CONSTRAINT pk_Employee PRIMARY KEY (EmployeeID),
     CONSTRAINT fk_Employee FOREIGN KEY (PositionsID)
         REFERENCES Positions (PositionsID)
