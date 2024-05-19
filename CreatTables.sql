@@ -2,11 +2,11 @@ CREATE TABLE Employee (
     EmployeeID     NUMBER(38) NOT NULL,
     FirstName      VARCHAR2(255) NOT NULL,
     LastName1      VARCHAR2(255) NOT NULL,
-    PositionID     NUMBER(38) NOT NULL,
+    PositionsID     NUMBER(38) NOT NULL,
     Salary         NUMBER(38) NOT NULL,
     DepartmentID   NUMBER(38) NOT NULL,
     CONSTRAINT pk_Employee PRIMARY KEY (EmployeeID),
-    CONSTRAINT fk_Employee FOREIGN KEY (PositionID)
+    CONSTRAINT fk_Employee FOREIGN KEY (PositionsID)
         REFERENCES Positions (PositionsID)
         ON DELETE CASCADE,
     CONSTRAINT fk_Employee2 FOREIGN KEY (DepartmentID1)
