@@ -51,7 +51,7 @@ CREATE TABLE Development (
 CREATE TABLE HumanResourceManagement (
     HRActionID     NUMBER(38) NOT NULL,
     ActionType     VARCHAR2(255) NOT NULL,
-    Date           DATE NOT NULL,
+    DateInfo           DATE NOT NULL,
     Day            NUMBER(38) NOT NULL,
     Month          NUMBER(38) NOT NULL,
     Year           NUMBER(38) NOT NULL,
