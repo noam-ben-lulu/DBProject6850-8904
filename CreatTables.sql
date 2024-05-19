@@ -9,7 +9,7 @@ CREATE TABLE Employee (
     CONSTRAINT fk_Employee FOREIGN KEY (PositionsID)
         REFERENCES Positions (PositionsID)
         ON DELETE CASCADE,
-    CONSTRAINT fk_Employee2 FOREIGN KEY (DepartmentID1)
+    CONSTRAINT fk_Employee2 FOREIGN KEY (DepartmentID)
         REFERENCES Department (DepartmentID)
         ON DELETE CASCADE
 );
