@@ -44,7 +44,7 @@ CREATE TABLE Development (
         REFERENCES Department (DepartmentID)
         ON DELETE CASCADE,
     CONSTRAINT fk_Development2 FOREIGN KEY (Day, Month, Year)
-        REFERENCES Date (Day, Month, Year)
+        REFERENCES DateInfo (Day, Month, Year)
         ON DELETE CASCADE
 );
 
@@ -60,15 +60,15 @@ CREATE TABLE HumanResourceManagement (
     Description    LONG NOT NULL,
     CONSTRAINT pk_HumanResourceManagement PRIMARY KEY (HRActionID),
     CONSTRAINT fk_HumanResourceManagement FOREIGN KEY (Day, Month, Year)
-        REFERENCES Date (Day, Month, Year)
+        REFERENCES DateInfo (Day, Month, Year)
         ON DELETE CASCADE,
     CONSTRAINT fk_HumanResourceManagement2 FOREIGN KEY (EmployeeID1)
         REFERENCES Employee (EmployeeID)
 );
 
-CREATE TABLE Date (
+CREATE TABLE DateInfo (
     Day            NUMBER(38) NOT NULL,
     Month          NUMBER(38) NOT NULL,
     Year           NUMBER(38) NOT NULL,
-    CONSTRAINT pk_Date PRIMARY KEY (Day, Month, Year)
+    CONSTRAINT pk_DateInfo PRIMARY KEY (Day, Month, Year)
 );
