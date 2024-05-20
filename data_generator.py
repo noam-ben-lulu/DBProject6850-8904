@@ -1,11 +1,9 @@
 import random
 from faker import Faker
-from openpyxl import Workbook
 
 # Faker object to generate fake data
 fake = Faker()
 
-# Function to generate fake data for Employee table
 # Function to generate fake data for Employee table
 def generate_employee_data(num_records):
     data = []
@@ -16,8 +14,7 @@ def generate_employee_data(num_records):
         position_id = random.randint(1, 5)
         salary = random.randint(30000, 100000)
         department_id = random.randint(1, 3)
-        positions_id = random.randint(1, 5)
-        data.append((employee_id, first_name, last_name, position_id, salary, department_id, positions_id))
+        data.append((employee_id, first_name, last_name, position_id, salary, department_id))
     return data
 
 # Function to generate fake data for Positions table
@@ -71,42 +68,41 @@ def generate_date_data(num_records):
         data.append((day, month, year))
     return data
 
-# Function to export data to Excel
-def export_to_excel(data, headers, filename):
-    wb = Workbook()
-    ws = wb.active
-    ws.append(headers)
-    for row in data:
-        ws.append(row)
-    wb.save(filename)
-    print(f"Data exported to {filename} successfully.")
+# Function to write SQL INSERT statements to a file
+def write_sql_inserts(table_name, data, columns, filename):
+    with open(filename, 'a') as f:
+        for row in data:
+            values = ', '.join([f"'{str(value)}'" if isinstance(value, str) else str(value) for value in row])
+            insert_statement = f"INSERT INTO {table_name} ({', '.join(columns)}) VALUES ({values});\n"
+            f.write(insert_statement)
+    print(f"Data for {table_name} exported to {filename} successfully.")
 
-# Generate fake data for Employee table and export to Excel
+# Generate and write data for Employee table
 employee_data = generate_employee_data(400)
-employee_headers = ["Employee ID", "First Name", "Last Name", "Position ID", "Salary", "Department ID", "Positions ID"]
-export_to_excel(employee_data, employee_headers, "Employee.xlsx")
+employee_columns = ["EmployeeID", "FirstName", "LastName", "PositionsID", "Salary", "DepartmentID"]
+write_sql_inserts("Employee", employee_data, employee_columns, "inserts.sql")
 
-# Generate fake data for Positions table and export to Excel
+# Generate and write data for Positions table
 positions_data = generate_positions_data(400)
-positions_headers = ["Position ID", "Position Name", "Requirements"]
-export_to_excel(positions_data, positions_headers, "Positions.xlsx")
+positions_columns = ["PositionsID", "PositionsName", "Requirements"]
+write_sql_inserts("Positions", positions_data, positions_columns, "inserts.sql")
 
-# Generate fake data for Department table and export to Excel
+# Generate and write data for Department table
 department_data = generate_department_data(400)
-department_headers = ["Department ID", "Department Name", "Num of Workers"]
-export_to_excel(department_data, department_headers, "Department.xlsx")
+department_columns = ["DepartmentID", "DepartmentName", "Numofworkers"]
+write_sql_inserts("Department", department_data, department_columns, "inserts.sql")
 
-# Generate fake data for Development table and export to Excel
+# Generate and write data for Development table
 development_data = generate_development_data(400)
-development_headers = ["Development ID", "Department ID", "Initiative Type", "Implementation Date",  "Day", "Month", "Year"]
-export_to_excel(development_data, development_headers, "Development.xlsx")
+development_columns = ["DevelopmentID", "DepartmentID", "InitiativeType", "ImplementationDate",  "Day", "Month", "Year"]
+write_sql_inserts("Development", development_data, development_columns, "inserts.sql")
 
-# Generate fake data for HumanResourceManagement table and export to Excel
+# Generate and write data for HumanResourceManagement table
 hr_data = generate_hr_data(400)
-hr_headers = ["HR Action ID", "Action Type", "Date", "Day", "Month", "Year", "Employee ID", "Description"]
-export_to_excel(hr_data, hr_headers, "HumanResourceManagement.xlsx")
+hr_columns = ["HRActionID", "ActionType", "DateInfo", "Day", "Month", "Year", "EmployeeID", "Description"]
+write_sql_inserts("HumanResourceManagement", hr_data, hr_columns, "inserts.sql")
 
-# Generate fake data for Date table and export to Excel
+# Generate and write data for Date table
 date_data = generate_date_data(400)
-date_headers = ["Day", "Month", "Year"]
-export_to_excel(date_data, date_headers, "Date.xlsx")
+date_columns = ["Day", "Month", "Year"]
+write_sql_inserts("DateInfo", date_data, date_columns, "inserts.sql")
