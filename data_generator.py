@@ -82,31 +82,31 @@ def export_to_excel(data, headers, filename):
     print(f"Data exported to {filename} successfully.")
 
 # Generate fake data for Employee table and export to Excel
-employee_data = generate_employee_data(200)
+employee_data = generate_employee_data(400)
 employee_headers = ["Employee ID", "First Name", "Last Name", "Position ID", "Salary", "Department ID", "Positions ID"]
 export_to_excel(employee_data, employee_headers, "Employee.xlsx")
 
 # Generate fake data for Positions table and export to Excel
-positions_data = generate_positions_data(200)
+positions_data = generate_positions_data(400)
 positions_headers = ["Position ID", "Position Name", "Requirements"]
 export_to_excel(positions_data, positions_headers, "Positions.xlsx")
 
 # Generate fake data for Department table and export to Excel
-department_data = generate_department_data(200)
+department_data = generate_department_data(400)
 department_headers = ["Department ID", "Department Name", "Num of Workers"]
 export_to_excel(department_data, department_headers, "Department.xlsx")
 
 # Generate fake data for Development table and export to Excel
-development_data = generate_development_data(200)
+development_data = generate_development_data(400)
 development_headers = ["Development ID", "Department ID", "Initiative Type", "Implementation Date",  "Day", "Month", "Year"]
 export_to_excel(development_data, development_headers, "Development.xlsx")
 
 # Generate fake data for HumanResourceManagement table and export to Excel
-hr_data = generate_hr_data(200)
+hr_data = generate_hr_data(400)
 hr_headers = ["HR Action ID", "Action Type", "Date", "Day", "Month", "Year", "Employee ID", "Description"]
 export_to_excel(hr_data, hr_headers, "HumanResourceManagement.xlsx")
 
 # Generate fake data for Date table and export to Excel
-date_data = generate_date_data(200)
+date_data = generate_date_data(400)
 date_headers = ["Day", "Month", "Year"]
 export_to_excel(date_data, date_headers, "Date.xlsx")
