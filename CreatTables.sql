@@ -9,7 +9,7 @@ CREATE TABLE Positions (
 CREATE TABLE department (
     departmentID   NUMBER(38) NOT NULL,
     departmentName VARCHAR2(255) NOT NULL,
-    Description    LONG NOT NULL,
+    Numofworkers   NUMBER(38) NOT NULL,
     CONSTRAINT pk_department PRIMARY KEY (departmentID)
 )
 /
