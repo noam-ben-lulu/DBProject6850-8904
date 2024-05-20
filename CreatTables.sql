@@ -1,6 +1,6 @@
 CREATE TABLE Positions (
-    PositionID     NUMBER(38) NOT NULL,
-    Position_Name  VARCHAR2(255) NOT NULL,
+    PositionsID     NUMBER(38) NOT NULL,
+    PositionsName  VARCHAR2(255) NOT NULL,
     Requirements   LONG NOT NULL,
     CONSTRAINT pk_Positions PRIMARY KEY (PositionID)
 )
