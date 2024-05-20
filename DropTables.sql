@@ -1,6 +1,12 @@
-DROP TABLE HumanResourceManagement;
-DROP TABLE Development;
-DROP TABLE Employee;
-DROP TABLE DateInfo;
-DROP TABLE Positions;
-DROP TABLE Department;
+DROP TABLE Attendance
+/
+DROP TABLE Human_Resource_Management
+/
+DROP TABLE Development
+/
+DROP TABLE Employee
+/
+DROP TABLE department
+/
+DROP TABLE Positions
+/
