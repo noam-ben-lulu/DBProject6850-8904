@@ -1,3 +1,17 @@
+
+CREATE TABLE Positions (
+    PositionsID    NUMBER(38) NOT NULL,
+    PositionsName  VARCHAR2(255) NOT NULL,
+    Requirements   LONG NOT NULL,
+    CONSTRAINT pk_Positions PRIMARY KEY (PositionsID)
+);
+CREATE TABLE Department (
+    DepartmentID   NUMBER(38) NOT NULL,
+    DepartmentName VARCHAR2(255) NOT NULL,
+    Numofworkers   NUMBER(38) NOT NULL,
+    CONSTRAINT pk_Department PRIMARY KEY (DepartmentID)
+);
+
 CREATE TABLE Employee (
     EmployeeID     NUMBER(38) NOT NULL,
     FirstName      VARCHAR2(255) NOT NULL,
@@ -12,20 +26,6 @@ CREATE TABLE Employee (
     CONSTRAINT fk_Employee2 FOREIGN KEY (DepartmentID)
         REFERENCES Department (DepartmentID)
         ON DELETE CASCADE
-);
-
-CREATE TABLE Positions (
-    PositionsID    NUMBER(38) NOT NULL,
-    PositionsName  VARCHAR2(255) NOT NULL,
-    Requirements   LONG NOT NULL,
-    CONSTRAINT pk_Positions PRIMARY KEY (PositionsID)
-);
-
-CREATE TABLE Department (
-    DepartmentID   NUMBER(38) NOT NULL,
-    DepartmentName VARCHAR2(255) NOT NULL,
-    Numofworkers   NUMBER(38) NOT NULL,
-    CONSTRAINT pk_Department PRIMARY KEY (DepartmentID)
 );
 
 CREATE TABLE Development (
@@ -43,6 +43,13 @@ CREATE TABLE Development (
     CONSTRAINT fk_Development2 FOREIGN KEY (Day, Month, Year)
         REFERENCES DateInfo (Day, Month, Year)
         ON DELETE CASCADE
+);
+
+CREATE TABLE DateInfo (
+    Day            NUMBER(38) NOT NULL,
+    Month          NUMBER(38) NOT NULL,
+    Year           NUMBER(38) NOT NULL,
+    CONSTRAINT pk_DateInfo PRIMARY KEY (Day, Month, Year)
 );
 
 CREATE TABLE HumanResourceManagement (
@@ -63,9 +70,4 @@ CREATE TABLE HumanResourceManagement (
         REFERENCES Employee (EmployeeID)
 );
 
-CREATE TABLE DateInfo (
-    Day            NUMBER(38) NOT NULL,
-    Month          NUMBER(38) NOT NULL,
-    Year           NUMBER(38) NOT NULL,
-    CONSTRAINT pk_DateInfo PRIMARY KEY (Day, Month, Year)
-);
+
