@@ -1,0 +1,401 @@
+DevelopmentID,departmentID,initiative_type,initiative_date
+1,262,nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi,1386-09-05
+2,145,tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque,1352-05-17
+3,275,nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem,1500-03-28
+4,358,tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum,1301-05-27
+5,111,condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit,1558-10-08
+6,278,mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies,1247-01-22
+7,373,justo sollicitudin ut suscipit a feugiat et eros vestibulum ac,1549-03-02
+8,167,odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce,1356-07-19
+9,12,iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean,1522-04-16
+10,176,luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi,1715-05-16
+11,93,nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non,1851-07-09
+12,201,hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque,1991-11-09
+13,338,metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum,1269-05-21
+14,66,pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis,1647-06-07
+15,281,feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium,1335-10-30
+16,399,ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique,1218-07-29
+17,88,ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit,1502-03-09
+18,179,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus,1459-02-13
+19,332,amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla,1650-07-30
+20,199,vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien,1939-12-27
+21,357,proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget,1510-02-26
+22,3,pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim,1597-01-23
+23,44,in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui,1270-05-26
+24,368,suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris,1817-08-07
+25,287,erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget,1612-04-28
+26,201,integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in,1987-12-31
+27,260,nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque,1603-03-02
+28,175,maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum,1858-01-29
+29,183,nulla eget eros elementum pellentesque quisque porta volutpat erat quisque,1679-02-10
+30,320,nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,1912-10-23
+31,276,sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci,1694-04-23
+32,72,aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam,1389-02-21
+33,387,at turpis a pede posuere nonummy integer non velit donec diam,1426-11-24
+34,356,dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in,1935-05-22
+35,217,eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula,1717-01-14
+36,348,eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur,1502-04-06
+37,144,cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla,1713-08-27
+38,299,adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a,1232-03-09
+39,148,vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis,1625-06-10
+40,16,fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui,1727-08-05
+41,382,quam a odio in hac habitasse platea dictumst maecenas ut,1883-06-29
+42,69,sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti,1834-01-30
+43,143,dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis,1990-10-28
+44,123,cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel,1515-10-08
+45,240,quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis,1977-01-25
+46,286,cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec,1748-03-31
+47,381,at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam,1271-06-18
+48,78,eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat,1740-08-22
+49,264,condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu,1745-08-11
+50,357,non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing,1425-04-30
+51,147,vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes,1873-07-17
+52,364,nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras,1461-01-09
+53,21,nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu,1740-10-19
+54,197,amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante,1728-07-11
+55,331,felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu,1956-04-17
+56,298,felis donec semper sapien a libero nam dui proin leo odio porttitor id,1549-07-13
+57,357,vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non,1337-03-05
+58,357,libero convallis eget eleifend luctus ultricies eu nibh quisque id,1528-04-14
+59,194,velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus,1373-01-22
+60,277,maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac,1700-11-07
+61,273,lectus vestibulum quam sapien varius ut blandit non interdum in,1272-02-28
+62,333,aenean fermentum donec ut mauris eget massa tempor convallis nulla,1458-12-11
+63,272,parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis,1494-03-19
+64,330,maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat,1983-02-07
+65,7,sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae,1424-08-27
+66,139,lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non,1542-05-31
+67,167,leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio,1576-05-19
+68,172,faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec,1934-01-28
+69,213,lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue,1981-09-14
+70,41,eget rutrum at lorem integer tincidunt ante vel ipsum praesent,1629-08-17
+71,230,proin eu mi nulla ac enim in tempor turpis nec euismod,1767-02-15
+72,342,non mi integer ac neque duis bibendum morbi non quam nec dui luctus,1813-06-29
+73,390,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis,1239-02-13
+74,112,semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque,1627-10-07
+75,352,blandit non interdum in ante vestibulum ante ipsum primis in faucibus,1382-07-30
+76,216,tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec,1591-03-23
+77,87,justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat,1691-08-09
+78,222,vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede,1550-03-15
+79,18,dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper,1436-10-07
+80,315,vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque,1580-05-04
+81,65,mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis,1820-03-16
+82,389,aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo,1800-02-08
+83,273,vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget,1433-05-31
+84,146,sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in,1943-02-11
+85,162,eget congue eget semper rutrum nulla nunc purus phasellus in,1858-04-10
+86,55,nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer,1854-11-14
+87,22,vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc,1375-10-24
+88,85,justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan,1827-11-13
+89,258,eu felis fusce posuere felis sed lacus morbi sem mauris laoreet,1917-01-02
+90,89,curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt,1519-11-11
+91,11,tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna,1753-05-13
+92,75,eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare,1540-03-14
+93,208,at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer,1375-07-22
+94,314,felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar,1780-07-15
+95,126,quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo,1916-09-11
+96,183,venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in,1281-07-23
+97,178,convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum,1540-07-16
+98,355,natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum,1253-12-30
+99,23,eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec,1416-04-10
+100,166,aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia,1483-09-16
+101,103,aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi,1372-03-05
+102,297,eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci,1718-12-11
+103,127,felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec,1678-06-18
+104,318,lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia,1252-12-09
+105,310,luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque,1573-05-06
+106,13,vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla,1888-03-26
+107,197,morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis,1445-11-30
+108,29,sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices,1426-12-05
+109,162,integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan,2017-05-24
+110,218,vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non,1634-09-11
+111,275,vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus,1637-04-18
+112,347,mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper,1311-04-10
+113,232,lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius,1740-11-16
+114,293,ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis,1206-11-17
+115,24,vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat,1467-05-13
+116,189,malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit,1697-09-07
+117,190,diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat,1378-03-15
+118,82,nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non,1542-04-05
+119,110,justo lacinia eget tincidunt eget tempus vel pede morbi porttitor,1421-12-12
+120,280,dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium,1494-01-29
+121,92,id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada,1427-10-30
+122,281,imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed,1422-02-12
+123,230,at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt,1835-09-22
+124,249,ut odio cras mi pede malesuada in imperdiet et commodo vulputate,1832-03-23
+125,218,vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer,1403-05-07
+126,94,maecenas leo odio condimentum id luctus nec molestie sed justo,1237-06-10
+127,39,nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum,1584-06-08
+128,159,morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit,1352-04-15
+129,171,amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim,1429-06-24
+130,392,porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris,1637-10-17
+131,309,nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus,1221-01-30
+132,155,ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula,1703-05-15
+133,161,metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit,1397-08-27
+134,126,dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum,1472-08-18
+135,199,ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus,1708-12-08
+136,237,vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor,1330-11-07
+137,229,eget tempus vel pede morbi porttitor lorem id ligula suspendisse,1757-10-18
+138,355,odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor,1819-11-20
+139,10,dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis,1687-06-27
+140,337,magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien,1825-09-22
+141,278,rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet,1961-02-24
+142,20,congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc,1704-04-21
+143,91,in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus,1900-01-30
+144,186,mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer,1403-11-30
+145,151,augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat,1365-09-08
+146,44,eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec,1254-11-15
+147,250,quam sapien varius ut blandit non interdum in ante vestibulum,1435-05-15
+148,182,dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec,1471-02-20
+149,189,ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci,1860-08-25
+150,295,quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa,1883-05-22
+151,274,convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo,1611-01-18
+152,297,pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien,1442-10-11
+153,364,donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id,1891-03-04
+154,337,proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at,1900-05-28
+155,332,enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus,1311-02-22
+156,166,quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra,1883-08-31
+157,211,duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero,1668-05-31
+158,223,et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis,1460-04-12
+159,262,ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non,1280-10-25
+160,16,pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus,1553-11-27
+161,392,nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi,1583-07-21
+162,162,dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean,1439-09-20
+163,178,potenti cras in purus eu magna vulputate luctus cum sociis natoque,1814-05-17
+164,156,fusce consequat nulla nisl nunc nisl duis bibendum felis sed,1367-12-11
+165,301,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia,1364-09-20
+166,40,vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper,1564-09-01
+167,7,nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus,1513-04-29
+168,14,quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio,1941-03-09
+169,245,mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales,1930-11-26
+170,34,malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit,1440-07-04
+171,55,eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante,1518-05-09
+172,370,nulla justo aliquam quis turpis eget elit sodales scelerisque mauris,1417-03-19
+173,358,et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec,1913-06-18
+174,232,ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque,1378-03-08
+175,59,donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet,1503-08-05
+176,392,tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus,1634-04-24
+177,238,rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum,1963-08-29
+178,55,adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget,1265-07-27
+179,269,vestibulum ante ipsum primis in faucibus orci luctus et ultrices,1404-09-14
+180,99,pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare,1797-05-17
+181,297,curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu,1461-09-20
+182,128,morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui,1501-04-29
+183,269,ante vivamus tortor duis mattis egestas metus aenean fermentum donec,1552-10-10
+184,391,consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi,1375-05-31
+185,56,hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante,1451-08-03
+186,129,eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor,1855-03-07
+187,249,felis fusce posuere felis sed lacus morbi sem mauris laoreet ut,1734-05-05
+188,209,lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus,1301-11-27
+189,360,libero non mattis pulvinar nulla pede ullamcorper augue a suscipit,1232-12-29
+190,156,ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi,1646-04-17
+191,348,pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas,1600-03-16
+192,118,ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros,1850-02-03
+193,371,felis sed interdum venenatis turpis enim blandit mi in porttitor,1947-04-22
+194,341,hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer,1357-01-29
+195,299,dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at,1307-11-22
+196,118,id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu,1522-12-06
+197,94,at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas,1746-10-23
+198,367,accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor,1970-10-22
+199,397,est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum,1958-09-06
+200,376,velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla,1912-12-15
+201,269,varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non,1726-01-30
+202,63,ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac,1426-09-17
+203,400,rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis,1993-07-18
+204,340,dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor,1595-12-25
+205,347,erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus,1376-03-30
+206,313,sit amet consectetuer adipiscing elit proin interdum mauris non ligula,1870-04-09
+207,301,vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit,1349-07-07
+208,8,turpis donec posuere metus vitae ipsum aliquam non mauris morbi non,1958-05-16
+209,103,sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem,1859-02-21
+210,305,pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio,1221-07-18
+211,89,at velit eu est congue elementum in hac habitasse platea dictumst morbi,1370-11-09
+212,246,maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra,1557-06-12
+213,397,luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non,1927-02-18
+214,382,pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra,1446-02-15
+215,77,etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus,1511-01-02
+216,3,non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede,1480-06-08
+217,203,sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy,1631-04-16
+218,38,a suscipit nulla elit ac nulla sed vel enim sit amet nunc,1933-06-04
+219,87,lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales,1425-05-25
+220,323,ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui,1546-03-03
+221,240,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna,1479-05-26
+222,357,eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est,1818-08-28
+223,111,pede ac diam cras pellentesque volutpat dui maecenas tristique est et,1865-10-06
+224,245,proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum,1514-02-26
+225,7,vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet,1604-07-15
+226,61,semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis,1374-04-08
+227,57,nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac,1372-01-06
+228,70,molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam,1930-11-16
+229,101,eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat,1340-11-09
+230,324,convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum,1981-09-24
+231,8,luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida,1241-02-17
+232,26,dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia,1283-11-13
+233,110,sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas,1901-01-23
+234,362,nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu,1651-12-27
+235,342,consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim,1410-11-14
+236,337,semper rutrum nulla nunc purus phasellus in felis donec semper,2001-09-20
+237,159,vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl,1763-08-31
+238,108,consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo,1734-09-24
+239,45,suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla,1978-05-27
+240,12,eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis,1247-08-23
+241,217,libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed,1840-05-26
+242,294,eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula,1880-07-06
+243,274,duis consequat dui nec nisi volutpat eleifend donec ut dolor,1884-09-13
+244,400,consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque,1360-05-18
+245,84,leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede,1710-03-03
+246,214,erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam,1988-12-17
+247,120,luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi,1643-09-09
+248,148,sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum,1510-04-27
+249,223,curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam,1885-03-01
+250,224,cursus id turpis integer aliquet massa id lobortis convallis tortor risus,1861-01-15
+251,357,turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan,1207-05-06
+252,30,nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis,1613-11-11
+253,107,dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et,1647-10-10
+254,353,consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu,1595-01-16
+255,268,placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel,1866-10-04
+256,333,lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus,1482-06-08
+257,184,erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis,1263-11-26
+258,229,quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio,1497-04-23
+259,140,eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec,1568-03-22
+260,295,lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer,1355-09-04
+261,359,quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum,1403-01-07
+262,366,curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam,1513-06-02
+263,323,id nisl venenatis lacinia aenean sit amet justo morbi ut,1410-10-05
+264,237,orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu,1212-02-18
+265,321,porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis,1263-06-14
+266,126,justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus,1558-05-02
+267,337,sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer,1684-08-12
+268,262,mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis,1756-07-19
+269,161,congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien,1813-04-08
+270,193,mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id,1479-07-29
+271,22,a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at,1923-12-04
+272,106,vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus,1434-07-17
+273,394,lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum,1843-11-06
+274,299,donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat,1455-03-28
+275,307,justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec,1329-10-26
+276,381,pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris,1783-07-14
+277,113,proin at turpis a pede posuere nonummy integer non velit donec diam neque,1541-12-09
+278,269,dapibus duis at velit eu est congue elementum in hac,1625-10-05
+279,72,aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio,1802-03-10
+280,106,curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat,1604-06-29
+281,375,porta volutpat erat quisque erat eros viverra eget congue eget,1601-01-14
+282,330,leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio,1683-07-07
+283,284,sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget,1995-01-01
+284,215,eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis,1928-01-25
+285,57,phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim,1407-02-27
+286,311,laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel,1762-05-27
+287,356,lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus,1991-01-26
+288,262,proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante,1390-05-02
+289,94,dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non,1734-07-23
+290,319,non mi integer ac neque duis bibendum morbi non quam,1930-01-11
+291,189,quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus,1605-04-08
+292,195,metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus,1855-07-02
+293,265,faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin,1239-05-15
+294,396,at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in,1428-04-26
+295,289,mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies,1568-11-12
+296,252,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est,1314-09-22
+297,83,auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl,1796-03-29
+298,38,sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam,1430-07-06
+299,377,sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque,1718-01-07
+300,212,vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac,1207-10-15
+301,332,volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in,1236-12-08
+302,251,dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis,1339-02-26
+303,314,sed tristique in tempus sit amet sem fusce consequat nulla,1365-01-24
+304,44,nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam,1295-09-07
+305,140,ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis,1887-10-21
+306,367,phasellus sit amet erat nulla tempus vivamus in felis eu sapien,1511-07-01
+307,233,amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante,1513-05-08
+308,136,vulputate elementum nullam varius nulla facilisi cras non velit nec,1604-10-13
+309,35,dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes,1861-10-03
+310,389,ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum,1986-07-05
+311,141,sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris,1981-12-27
+312,245,non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate,1230-09-12
+313,122,in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa,1382-03-14
+314,252,augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero,1589-06-02
+315,190,mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec,1790-10-02
+316,219,lacus at turpis donec posuere metus vitae ipsum aliquam non,1806-05-18
+317,166,phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in,2011-07-15
+318,189,tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula,1568-03-29
+319,196,nunc vestibulum ante ipsum primis in faucibus orci luctus et,1207-02-21
+320,348,mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat,1223-07-25
+321,150,pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est,1404-04-09
+322,327,convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien,1515-12-24
+323,361,et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in,1291-03-03
+324,395,etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl,1532-08-16
+325,121,quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna,1807-08-31
+326,227,aenean auctor gravida sem praesent id massa id nisl venenatis lacinia,1471-04-12
+327,357,sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus,1540-12-19
+328,123,pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam,1551-11-05
+329,2,arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam,1737-09-18
+330,16,vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae,1710-05-04
+331,345,lectus pellentesque eget nunc donec quis orci eget orci vehicula,1359-05-14
+332,153,eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio,1203-09-11
+333,139,enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis,1880-09-17
+334,391,donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis,1996-07-28
+335,396,curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor,1279-09-08
+336,395,nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh,1596-10-02
+337,317,dui nec nisi volutpat eleifend donec ut dolor morbi vel,1839-01-30
+338,345,donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et,1621-09-13
+339,296,blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices,1676-04-27
+340,89,nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu,1737-03-22
+341,394,morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus,1903-06-30
+342,170,sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum,1968-11-17
+343,121,vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,1298-09-16
+344,27,sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu pede,2003-08-23
+345,28,luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea,2019-09-26
+346,370,accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque,1926-02-03
+347,168,etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris,1327-08-13
+348,159,felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc,1949-01-26
+349,234,turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis,1399-05-20
+350,267,id massa id nisl venenatis lacinia aenean sit amet justo morbi,1643-05-01
+351,352,massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero,1590-10-30
+352,179,lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis,1905-06-03
+353,367,suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque,1777-11-20
+354,208,etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis,1634-11-28
+355,376,quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris,1655-01-23
+356,183,faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis,1306-11-03
+357,101,risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus,1289-04-07
+358,155,velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo,1825-02-07
+359,274,fermentum justo nec condimentum neque sapien placerat ante nulla justo,1748-09-08
+360,330,mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus,1844-11-16
+361,120,donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum,1474-04-19
+362,112,tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum,1822-02-18
+363,39,malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit,1582-11-02
+364,331,sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed,1731-08-17
+365,51,congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium,1480-03-20
+366,175,vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus,1717-12-07
+367,394,at feugiat non pretium quis lectus suspendisse potenti in eleifend,1226-12-16
+368,242,pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum,1931-08-26
+369,281,tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum,2002-01-17
+370,208,sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra,1658-10-26
+371,44,posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet,1918-06-01
+372,30,nibh fusce lacus purus aliquet at feugiat non pretium quis,1358-11-22
+373,48,odio donec vitae nisi nam ultrices libero non mattis pulvinar,1667-06-18
+374,89,justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam,1961-04-06
+375,10,nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu,1542-10-18
+376,351,lorem quisque ut erat curabitur gravida nisi at nibh in hac,1961-01-12
+377,88,libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum,1872-03-31
+378,206,rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus,1597-02-01
+379,106,pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a,1483-08-26
+380,82,quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus,1502-02-07
+381,302,at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque,1784-08-20
+382,12,in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget,1392-01-20
+383,390,pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet,1742-07-11
+384,58,pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel,1661-12-12
+385,178,lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla,1476-09-10
+386,216,neque libero convallis eget eleifend luctus ultricies eu nibh quisque id,1882-04-12
+387,47,faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti,1448-10-14
+388,161,vestibulum sit amet cursus id turpis integer aliquet massa id lobortis,1478-10-21
+389,283,at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut,1754-01-28
+390,181,semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac,1417-11-19
+391,294,morbi a ipsum integer a nibh in quis justo maecenas,1720-09-30
+392,253,pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur,1670-05-24
+393,153,nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec,1541-03-01
+394,216,dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien,1337-07-21
+395,29,sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus,1747-11-20
+396,349,vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet,1874-08-21
+397,111,nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in,1812-05-22
+398,35,morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim,1690-05-21
+399,169,congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam,1948-04-23
+400,223,duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non,1712-02-29

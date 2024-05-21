@@ -1,0 +1,401 @@
+departmentID,departmentName,Numofworkers
+1,Finance,18
+2,Finance,23
+3,Finance,9
+4,Marketing,12
+5,Human Resources,19
+6,Finance,5
+7,Human Resources,20
+8,Marketing,8
+9,Finance,14
+10,Human Resources,25
+11,Marketing,20
+12,Human Resources,17
+13,Finance,16
+14,Marketing,15
+15,Marketing,25
+16,Human Resources,25
+17,Human Resources,13
+18,Marketing,21
+19,Sales,15
+20,Marketing,7
+21,Sales,10
+22,Human Resources,12
+23,Sales,7
+24,Finance,16
+25,Marketing,22
+26,Human Resources,17
+27,Human Resources,19
+28,Marketing,20
+29,Marketing,21
+30,Sales,25
+31,Human Resources,13
+32,Marketing,19
+33,Sales,19
+34,Sales,8
+35,Human Resources,8
+36,Finance,17
+37,Sales,15
+38,Human Resources,13
+39,Human Resources,12
+40,Human Resources,23
+41,Sales,9
+42,Marketing,16
+43,Finance,14
+44,Human Resources,7
+45,Marketing,16
+46,Finance,22
+47,Human Resources,11
+48,Sales,12
+49,Finance,15
+50,Human Resources,20
+51,Sales,15
+52,Finance,7
+53,Marketing,6
+54,Human Resources,20
+55,Marketing,13
+56,Finance,16
+57,Sales,11
+58,Human Resources,21
+59,Marketing,15
+60,Finance,16
+61,Sales,17
+62,Human Resources,10
+63,Marketing,21
+64,Sales,12
+65,Sales,12
+66,Sales,24
+67,Marketing,21
+68,Marketing,10
+69,Marketing,25
+70,Marketing,6
+71,Finance,12
+72,Sales,5
+73,Human Resources,5
+74,Human Resources,17
+75,Marketing,23
+76,Finance,21
+77,Human Resources,13
+78,Finance,23
+79,Marketing,21
+80,Marketing,5
+81,Human Resources,17
+82,Human Resources,25
+83,Sales,6
+84,Human Resources,13
+85,Marketing,10
+86,Finance,9
+87,Human Resources,14
+88,Finance,9
+89,Sales,19
+90,Human Resources,8
+91,Human Resources,14
+92,Human Resources,19
+93,Human Resources,22
+94,Sales,5
+95,Human Resources,11
+96,Finance,14
+97,Human Resources,5
+98,Human Resources,5
+99,Sales,21
+100,Sales,21
+101,Finance,22
+102,Sales,20
+103,Marketing,15
+104,Sales,19
+105,Marketing,5
+106,Human Resources,6
+107,Sales,16
+108,Sales,12
+109,Marketing,12
+110,Sales,18
+111,Finance,24
+112,Human Resources,19
+113,Marketing,13
+114,Human Resources,15
+115,Marketing,11
+116,Marketing,19
+117,Marketing,14
+118,Finance,6
+119,Finance,7
+120,Marketing,9
+121,Finance,24
+122,Sales,8
+123,Sales,25
+124,Sales,25
+125,Marketing,24
+126,Marketing,15
+127,Marketing,21
+128,Finance,20
+129,Sales,22
+130,Finance,20
+131,Human Resources,12
+132,Finance,6
+133,Human Resources,11
+134,Human Resources,15
+135,Finance,12
+136,Finance,23
+137,Sales,20
+138,Finance,21
+139,Finance,16
+140,Finance,18
+141,Sales,10
+142,Finance,5
+143,Sales,8
+144,Marketing,13
+145,Marketing,18
+146,Human Resources,13
+147,Marketing,10
+148,Sales,19
+149,Sales,8
+150,Human Resources,7
+151,Human Resources,9
+152,Sales,6
+153,Marketing,22
+154,Human Resources,21
+155,Sales,9
+156,Human Resources,12
+157,Finance,5
+158,Marketing,23
+159,Marketing,15
+160,Finance,21
+161,Sales,21
+162,Finance,7
+163,Marketing,23
+164,Marketing,13
+165,Human Resources,14
+166,Human Resources,21
+167,Marketing,6
+168,Human Resources,19
+169,Sales,8
+170,Finance,15
+171,Sales,19
+172,Marketing,10
+173,Marketing,12
+174,Marketing,9
+175,Marketing,9
+176,Finance,22
+177,Sales,8
+178,Human Resources,24
+179,Human Resources,18
+180,Human Resources,21
+181,Marketing,23
+182,Marketing,9
+183,Sales,13
+184,Finance,20
+185,Sales,23
+186,Human Resources,19
+187,Sales,17
+188,Human Resources,7
+189,Finance,15
+190,Finance,25
+191,Marketing,15
+192,Sales,17
+193,Human Resources,11
+194,Finance,5
+195,Marketing,6
+196,Sales,17
+197,Human Resources,16
+198,Human Resources,25
+199,Sales,8
+200,Finance,21
+201,Sales,14
+202,Human Resources,9
+203,Finance,18
+204,Finance,23
+205,Human Resources,9
+206,Finance,7
+207,Marketing,8
+208,Sales,18
+209,Human Resources,18
+210,Finance,21
+211,Human Resources,12
+212,Sales,17
+213,Finance,8
+214,Finance,20
+215,Sales,20
+216,Finance,9
+217,Human Resources,7
+218,Finance,11
+219,Finance,9
+220,Human Resources,11
+221,Marketing,13
+222,Sales,20
+223,Finance,19
+224,Finance,5
+225,Marketing,18
+226,Finance,21
+227,Human Resources,12
+228,Finance,17
+229,Marketing,25
+230,Marketing,5
+231,Finance,22
+232,Sales,16
+233,Human Resources,22
+234,Human Resources,7
+235,Marketing,23
+236,Finance,23
+237,Human Resources,8
+238,Marketing,18
+239,Finance,12
+240,Finance,16
+241,Finance,22
+242,Human Resources,15
+243,Finance,17
+244,Sales,19
+245,Finance,23
+246,Finance,17
+247,Sales,15
+248,Human Resources,24
+249,Human Resources,15
+250,Human Resources,18
+251,Sales,23
+252,Human Resources,7
+253,Sales,19
+254,Finance,21
+255,Human Resources,24
+256,Human Resources,13
+257,Human Resources,5
+258,Sales,15
+259,Finance,21
+260,Marketing,8
+261,Finance,21
+262,Finance,5
+263,Finance,20
+264,Marketing,17
+265,Human Resources,17
+266,Marketing,15
+267,Human Resources,25
+268,Human Resources,7
+269,Human Resources,16
+270,Sales,12
+271,Human Resources,16
+272,Human Resources,12
+273,Sales,10
+274,Finance,6
+275,Marketing,21
+276,Human Resources,15
+277,Marketing,7
+278,Sales,16
+279,Sales,24
+280,Sales,18
+281,Human Resources,8
+282,Sales,7
+283,Sales,6
+284,Sales,8
+285,Human Resources,7
+286,Finance,24
+287,Human Resources,10
+288,Human Resources,18
+289,Sales,6
+290,Finance,25
+291,Marketing,11
+292,Marketing,17
+293,Marketing,17
+294,Sales,22
+295,Marketing,14
+296,Human Resources,6
+297,Finance,5
+298,Marketing,14
+299,Human Resources,18
+300,Sales,6
+301,Human Resources,23
+302,Finance,10
+303,Marketing,23
+304,Sales,24
+305,Marketing,6
+306,Human Resources,17
+307,Finance,13
+308,Marketing,20
+309,Marketing,19
+310,Sales,20
+311,Human Resources,17
+312,Sales,20
+313,Marketing,25
+314,Human Resources,12
+315,Marketing,10
+316,Finance,13
+317,Finance,11
+318,Human Resources,11
+319,Marketing,10
+320,Finance,17
+321,Finance,8
+322,Finance,16
+323,Human Resources,5
+324,Finance,22
+325,Sales,11
+326,Human Resources,13
+327,Finance,21
+328,Marketing,15
+329,Marketing,24
+330,Finance,12
+331,Sales,20
+332,Sales,24
+333,Finance,12
+334,Finance,6
+335,Sales,9
+336,Marketing,16
+337,Marketing,21
+338,Marketing,18
+339,Sales,12
+340,Marketing,15
+341,Sales,14
+342,Marketing,17
+343,Finance,22
+344,Human Resources,9
+345,Sales,10
+346,Finance,15
+347,Finance,8
+348,Sales,25
+349,Human Resources,20
+350,Sales,6
+351,Marketing,11
+352,Finance,17
+353,Sales,19
+354,Sales,20
+355,Marketing,9
+356,Sales,14
+357,Marketing,5
+358,Sales,10
+359,Human Resources,15
+360,Finance,6
+361,Marketing,21
+362,Human Resources,15
+363,Sales,18
+364,Human Resources,11
+365,Sales,19
+366,Human Resources,13
+367,Human Resources,21
+368,Human Resources,19
+369,Human Resources,16
+370,Marketing,24
+371,Finance,25
+372,Finance,12
+373,Marketing,24
+374,Marketing,12
+375,Human Resources,19
+376,Finance,5
+377,Marketing,20
+378,Marketing,19
+379,Sales,18
+380,Sales,11
+381,Marketing,12
+382,Sales,7
+383,Finance,22
+384,Marketing,10
+385,Marketing,6
+386,Finance,5
+387,Sales,5
+388,Marketing,19
+389,Marketing,21
+390,Finance,18
+391,Human Resources,24
+392,Finance,5
+393,Finance,24
+394,Sales,8
+395,Finance,12
+396,Human Resources,22
+397,Marketing,6
+398,Sales,25
+399,Finance,8
+400,Human Resources,6
