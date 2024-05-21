@@ -128,14 +128,21 @@ CREATE TABLE Human_Resource_Management (
 )
 /
 
+
 CREATE TABLE Attendance (
     EmployeeID     NUMBER(38) NOT NULL,
+    
     Aten_Date      DATE NOT NULL,
+    
     Status         VARCHAR2(255) NOT NULL,
+    
     CONSTRAINT pk_Attendance PRIMARY KEY (EmployeeID, Aten_Date),
+
     CONSTRAINT fk_Attendance FOREIGN KEY (EmployeeID)
         REFERENCES Employee (EmployeeID)
 )
+
+
 /
 ![image](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/a4a4211c-a18a-453f-8388-624487184344)
 
