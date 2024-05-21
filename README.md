@@ -9,50 +9,51 @@ Noam Ben-Lulu 327796850.
 בנוסף תיהיה אופציה לניהול משאבי אנוש עבור איש ספציפי במחלקה עם תיאור הפעולה הנעשית(כגון העלה בשכר ענישה וכדו). 
 
 ## ERD
-![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/8cf9fead-3e2c-4065-95db-332ce7bba5fc)
+![image](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/fcfc28d1-c465-454c-a7b2-3cbab48f706c)
+
 
 ## Entities:
 
 1.**Employees:**:
 
 - EmployeeID (מזהה העובד, INT).
-- First Name (שם פרטי, VARCHAR(50)).
-- Last Name (שם משפחה, VARCHAR(50))
+- First Name (שם פרטי, VARCHAR2(255)).
+- Last Name (שם משפחה, VARCHAR2(255))
 - PositionID (מזהה התפקיד, INT)
 - Salary (משכורת, DECIMAL(10,2))
 - DepartmentID (מזהה מחלקה, INT)
 
 2.**Positions**:
 - PositionID (מזהה התפקיד, INT)
-- Position Name (כותרת התפקיד, VARCHAR(100))
+- Position Name (כותרת התפקיד, VARCHAR2(255))
 - Responsibilities (אחריות עיקרית, TEXT)
 - Requirements (דרישות לתפקיד, TEXT)
 
 3. **department**:
 - departmentID(INT, מזהה ראשי)
-- departmentName (VARCHAR(100))
+- departmentName (VARCHAR2(255))
 - Description(TEXT)
 
 4.**Development**:   
 
 - DevelopmentID(INT, מזהה ראשי)
 - departmentID (INT, מזהה חיצוני לטבלת מחלקה)
-- initiative_type(VARCHAR(100))
+- initiative_type(VARCHAR2(255))
 - initiative_date(DATE)
 
 
 5. **Human Resource Management**:
 - HRActionID (מזהה פעולת משאבי אנוש, INT PRIMARY KEY)
-- ActionType (סוג הפעולה, VARCHAR(100))
+- ActionType (סוג הפעולה, VARCHAR2(255))
 - Date (תאריך, DATE)
 - Description (תיאור, TEXT)
 - EmployeeID (מזהה עובד, INT)
 
 
-6. **DateInfo**: 
-- Day(יום, INT)
-- Month(חודש, INT)
-- Year(שנה, INT)
+6. **Attendance**: 
+- EmployeeID(מזהה העובד, INT PRIMARY KEY)
+- Aten_Date(תאריך, DATE PRIMARY KEY)
+- Status(VARCHAR2(255))
 
 
 
@@ -63,9 +64,10 @@ Noam Ben-Lulu 327796850.
 - Departments(DepartmentID,DepartmentName, Description)
 - Development(DevelopmentID,DepartmentID, InitiativeType, InitiativeDate)
 - Human Resource Management(HRActionID,EmployeeID, ActionType, Date, Description)
-- Date(Day, Month, Year)
+- Attendance(EmployeeID, Aten_Date, Status)
 
 
 ## DSD
-![image](https://github.com/noam-ben-lulu/minip_basnat/assets/169597958/fba2a857-209f-40d7-af18-2798370745f7)
+![image](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/542193ec-dee5-4a2f-b462-7081b4a8cffc)
+
 
