@@ -77,7 +77,7 @@ CREATE TABLE Positions (
     
     PositionsName  VARCHAR2(255) NOT NULL,
     
-    Requirements   LONG NOT NULL,
+    Requirements   VARCHAR2(255) NOT NULL,
     
     CONSTRAINT pk_Positions PRIMARY KEY (PositionsID)
 )
@@ -147,7 +147,7 @@ CREATE TABLE Human_Resource_Management (
     
     HRA_Date       DATE NOT NULL,
     
-    Description    LONG NOT NULL,
+    Description    VARCHAR2(255) NOT NULL,
     
     EmployeeID     NUMBER(38) NOT NULL,
     
