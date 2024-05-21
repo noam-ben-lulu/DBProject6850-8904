@@ -1,7 +1,7 @@
 CREATE TABLE Positions (
     PositionsID     NUMBER(38) NOT NULL,
     PositionsName  VARCHAR2(255) NOT NULL,
-    Requirements   LONG NOT NULL,
+    Requirements   VARCHAR2(255) NOT NULL,
     CONSTRAINT pk_Positions PRIMARY KEY (PositionsID)
 )
 /
@@ -46,7 +46,7 @@ CREATE TABLE Human_Resource_Management (
     HRActionID     NUMBER(38) NOT NULL,
     ActionType     VARCHAR2(255) NOT NULL,
     HRA_Date       DATE NOT NULL,
-    Description    LONG NOT NULL,
+    Description    VARCHAR2(255) NOT NULL,
     EmployeeID     NUMBER(38) NOT NULL,
     CONSTRAINT pk_Human_Resource_Management PRIMARY KEY (HRActionID),
     CONSTRAINT fk_Human_Resource_Management FOREIGN KEY (EmployeeID)
