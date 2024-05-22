@@ -206,6 +206,9 @@ the csv files created by mockaroo
 
 ![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/5ac67d52-bd5c-4a3f-b775-4bfbe57ed357)
 
+## Backup and restore
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/118b0592-3971-48e3-9786-769d1e715ca5)
 
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/e56972b4-c926-44ff-bc8b-6cd6100461c1)
 
 
