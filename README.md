@@ -16,43 +16,43 @@
 
 1.**Employees:**:
 
-- EmployeeID (מזהה העובד, INT).
+- **EmployeeID** (מזהה העובד, INT).
 - First Name (שם פרטי, VARCHAR2(255)).
 - Last Name (שם משפחה, VARCHAR2(255))
-- PositionID (מזהה התפקיד, INT)
+- PositionID FK (מזהה התפקיד, INT)
 - Salary (משכורת, DECIMAL(10,2))
-- DepartmentID (מזהה מחלקה, INT)
+- DepartmentID FK (מזהה מחלקה, INT)
 
 2.**Positions**:
-- PositionID (מזהה התפקיד, INT)
+- **PositionID** (מזהה התפקיד, INT)
 - Position Name (כותרת התפקיד, VARCHAR2(255))
 - Responsibilities (אחריות עיקרית, TEXT)
 - Requirements (דרישות לתפקיד, TEXT)
 
 3. **department**:
-- departmentID(INT, מזהה ראשי)
+- **departmentID**(INT, מזהה ראשי)
 - departmentName (VARCHAR2(255))
 - Description(TEXT)
 
 4.**Development**:   
 
-- DevelopmentID(INT, מזהה ראשי)
-- departmentID (INT, מזהה חיצוני לטבלת מחלקה)
+- **DevelopmentID**(INT, מזהה ראשי)
+- departmentID FK (INT, מזהה חיצוני לטבלת מחלקה)
 - initiative_type(VARCHAR2(255))
 - initiative_date(DATE)
 
 
 5. **Human Resource Management**:
-- HRActionID (מזהה פעולת משאבי אנוש, INT PRIMARY KEY)
+- **HRActionID** (מזהה פעולת משאבי אנוש, INT PRIMARY KEY)
 - ActionType (סוג הפעולה, VARCHAR2(255))
 - Date (תאריך, DATE)
 - Description (תיאור, TEXT)
-- EmployeeID (מזהה עובד, INT)
+- EmployeeID FK (מזהה עובד, INT)
 
 
 6. **Attendance**: 
-- EmployeeID(מזהה העובד, INT PRIMARY KEY)
-- Aten_Date(תאריך, DATE PRIMARY KEY)
+- **EmployeeID** FK(מזהה העובד, INT PRIMARY KEY)
+- **Aten_Date**(תאריך, DATE PRIMARY KEY)
 - Status(VARCHAR2(255))
 
 
