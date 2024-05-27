@@ -9,7 +9,7 @@
 בעצם כמו שאמרנו בשער הפתיחה של הפרויקט אנחנו נתעסק בתוך ארגון גדול של בנק כאשר הפרויקט שלנו ייקח מחלקה מתוך הבנק וזה מחלקת משאבי אנוש על כל פרטיה עובדים מחלקות מעמדות משאבי אנוש ונוכחות
 
 ## ERD
-![image](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/fcfc28d1-c465-454c-a7b2-3cbab48f706c)
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/169597958/ac2f178e-73dc-4180-bb86-1638190a8fe6)
 
 
 ## Entities:
@@ -68,7 +68,7 @@
 
 
 ## DSD
-![image](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/542193ec-dee5-4a2f-b462-7081b4a8cffc)
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/169597958/ea6c9ed7-cba5-4858-8958-597ed428c851)
 
 ## נימוקים לעיצוב:
 נורמליזציה: הטבלאות נורמליזציות כדי למנוע כפילות נתונים ולאפשר גישה ותחזוקה יעילים יותר של הנתונים.
