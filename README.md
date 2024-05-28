@@ -234,7 +234,8 @@ the csv files created by mockaroo
   
  שאילתה 1:
  
- ![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/d11350aa-266d-4917-8215-6b85682a16be)
+ ![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/cc8faba7-262e-46ea-a642-eded9ab6300e)
+
  
  
  הסבר: 
@@ -244,7 +245,7 @@ the csv files created by mockaroo
  
  שאילתה 2: 
 
- ![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/5a0f0509-83ca-4a12-9363-15b395098220)
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/bd293a70-189c-4b32-a1c1-60b214e812f1)
  
  
 הסבר:
