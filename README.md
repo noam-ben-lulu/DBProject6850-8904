@@ -227,4 +227,13 @@ the csv files created by mockaroo
    ![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/ad6b9543-c569-40fc-8f0b-efdf036cbc21)
    ![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/c3d17467-074f-47cb-9853-29bc554fbe4b)
 
+## שלב 2
+## שאילתות ללא פרמטרים
+  ## שאילתות select
+  
+## שאילתה 1: 
+ 
 
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/d11350aa-266d-4917-8215-6b85682a16be)
+## הסבר: 
+ השאילתה מחזירה את שמות העובדים, המחלקה שלהם והמשכורת, ממיינת לפי שם המחלקה ולאחר מכן לפי המשכורת בסדר יורד  
