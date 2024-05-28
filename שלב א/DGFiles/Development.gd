@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2637
+Password=2423
 Database=
 DateFormat=
 CommitCount=0
@@ -27,7 +27,7 @@ Master=
 Name=DEPARTMENTID
 Type=NUMBER
 Size=38
-Data=SQL(SELECT * FROM (SELECT DepartmentID FROM Department ORDER BY DBMS_RANDOM.VALUE) WHERE ROWNUM = 1)
+Data=List(select DepartmentID from Department)
 Master=
 
 [Record]

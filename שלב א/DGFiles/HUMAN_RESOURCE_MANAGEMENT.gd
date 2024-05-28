@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2446
+Password=2838
 Database=
 DateFormat=
 CommitCount=0
@@ -48,6 +48,6 @@ Master=
 Name=EMPLOYEEID
 Type=NUMBER
 Size=38
-Data=SQL(SELECT * FROM (SELECT EmployeeID FROM Employee ORDER BY DBMS_RANDOM.VALUE) WHERE ROWNUM = 1)
+Data=List(select EmployeeID from Employee)
 Master=
 
