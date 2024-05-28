@@ -378,5 +378,5 @@ the csv files created by mockaroo
 ![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/6cb8c5fb-e8ff-4750-ad0c-a4476c11c3d0)
 
 בדיקה שהאילוץ מתקיים:
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/eafe090f-af26-4144-857f-8075adfda316)
 
-![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/4839d65f-b8e6-4796-8f33-6e6d8e33c62a)
