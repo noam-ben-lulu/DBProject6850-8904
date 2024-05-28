@@ -192,11 +192,16 @@ CREATE TABLE Attendance (
 
 ![WhatsApp Image 2024-05-20 at 21 26 45](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/94e38e4d-1cca-4278-b4cd-e5f44b9adcdd)
 
-![WhatsApp Image 2024-05-20 at 21 27 04](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/6a40dbfc-f4a0-4e25-b3f6-16eb4773b423)
-![WhatsApp Image 2024-05-20 at 21 27 22](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/d2039dae-01e8-452c-8ec1-1028114cabc5)
+![WhatsApp Image 2024-05-27 at 18 50 37](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/03049901-b4d1-46e7-a876-495b524c932c)
+
+![WhatsApp Image 2024-05-27 at 18 47 35](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/a4c8a8d8-0067-420c-83b3-500adab1c194)
+
+
 
 ![WhatsApp Image 2024-05-20 at 21 27 37](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/eda0e882-2e07-4211-8e31-e225a96d81d5)
-![WhatsApp Image 2024-05-20 at 21 33 09](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/4d982eb8-4ae2-4275-ab1c-c254d25c8351)
+![WhatsApp Image 2024-05-28 at 17 40 18](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/5bb660a8-9507-4c16-a84f-adb06f8f83bd)
+
+
 
 ## Text Importer(from csv files)
 the csv files created by mockaroo 
