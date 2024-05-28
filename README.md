@@ -315,5 +315,17 @@ the csv files created by mockaroo
 
 גם כאן נבצע שאילתה להראות את מסד הנתונים לפני נעשה שאילתת עדכון ולאחר מכן שאילת להראות את מסד הנתונים לאחר העדכון
 
-שאילתה 1:
+שאילתה 1: עדכון משכורת של עובדים במחלקת HR ב-10% בעקבות עבודתם הקשה בפרויקט
 
+בדיקת הנתונים:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/52a0f103-f5e3-497a-8b9b-8099d09c32f3)
+
+ביצוע העדכון:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/02a0b737-c49e-4f89-b589-c0edfeef2266)
+
+בדקית העדכון:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/44e43038-2a98-45b2-9fba-98b8310abbec)
+נסתכל על לדוגמא העובד הראשון בהתחלה המשכורת שלו הייתה 
