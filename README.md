@@ -346,3 +346,37 @@ the csv files created by mockaroo
 
 כל השאילתות מופיעות בקובץ sql
 ## שאילתות עם פרמטרים
+
+## אילוצים
+נבצע אילוצים שונים ולאחר מכן לכל אילוץ נראה שבאמת מקיימת הודעת שגיאה שמנסים לסתור את האילוץ
+
+אילוץ CHECK בטבלת Employee לעמודה salary בכדי לוודא שהמשכורת חיובית (גדולה מ-0)
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/2648cc6d-e8e8-4c17-9a25-b18ae4faa07b)
+
+נבדוק השאילוץ מתקיים:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/c47d2c93-b50e-44d4-ba66-20e4753ef858)
+
+אילוץ NOT NULL בטבלת department לעמודה departmentName
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/920cdcee-b52f-4953-888c-69f80ec6972c)
+
+נבדוק שהאילוץ מתקיים:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/24f8a499-10f2-4867-a293-c8bdf49b0393)
+
+אילוץ DEFAULT בטבלת department לעמודה departmentName עם ערך ברירת מחדל 'Sales'
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/f2e2e442-edd2-4217-85da-c3b9a6a81958)
+
+בדיקה שהאילוץ מתקיים:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/99484dd7-367d-49c7-a77a-c0b09608b037)
+
+אילוץ CHECK בטבלת department לעמודה departmentName
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/6cb8c5fb-e8ff-4750-ad0c-a4476c11c3d0)
+
+בדיקה שהאילוץ מתקיים:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/4839d65f-b8e6-4796-8f33-6e6d8e33c62a)
