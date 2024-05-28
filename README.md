@@ -188,9 +188,7 @@ CREATE TABLE Attendance (
 ![image](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/a4a4211c-a18a-453f-8388-624487184344)
 
 ## Data-Generator(screenshots)
-
-![WhatsApp Image 2024-05-20 at 21 26 28](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/30749049-541e-4301-8709-dd762ed812bb)
-
+![WhatsApp Image 2024-05-28 at 17 37 44](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/83bda7f1-91bf-4f7b-94ca-25c3b4c937d7)
 
 ![WhatsApp Image 2024-05-20 at 21 26 45](https://github.com/noam-ben-lulu/minip_basnat/assets/128416447/94e38e4d-1cca-4278-b4cd-e5f44b9adcdd)
 
