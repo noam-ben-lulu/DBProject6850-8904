@@ -348,12 +348,13 @@ the csv files created by mockaroo
 ## שאילתות עם פרמטרים
 
 שאילתה 1: הכנסת תאריך מסוים וקבלת הנתונים על כל העובדים שנכחו באותו תאריך (תעודת זהות העובד , שם העובד , משכורת ומחלקה שעובד בה)
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/dace5827-8f79-4864-9db0-5efea259b34b)
 
-![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/24a0c57e-1952-4c1a-bab2-962c9cbbfaf0)
 
 לדוגמא כאשר נכניס את התאריך 2024-05-08 (לפי הפורמט של אורקל) נקבל:
 
-![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/74ba6056-4839-42f2-9b5b-b587cc849a85)
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/c0c8cffc-7cd0-4fcd-badd-d8f69fa0be2d)
+
 
 שאילתה 2: החזרת כל הפרטים על עובד מסוים כאשר הקלט הוא שם העובד המבוקש (נקבל את המשכורת שלו , המחלקה שלו סוג היוזמה שהוא ביצע התאריך שהוא ביצע וכמובן הפעולות שהוא ביצע והתאריך שהוא ביצע)
 
