@@ -355,7 +355,31 @@ the csv files created by mockaroo
 
 ![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/74ba6056-4839-42f2-9b5b-b587cc849a85)
 
-שאילתה 2:
+שאילתה 2: החזרת כל הפרטים על עובד מסוים כאשר הקלט הוא שם העובד המבוקש (נקבל את המשכורת שלו , המחלקה שלו סוג היוזמה שהוא ביצע התאריך שהוא ביצע וכמובן הפעולות שהוא ביצע והתאריך שהוא ביצע)
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/2a4903b2-9776-43d6-93d1-094ce9f9e857)
+
+
+לדוגמא כאשר נכניס את שם העובדת לריסה טינר:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/7fd9a8cd-d09e-48f0-aeec-2b3aa3d88f12)
+
+שאילתה 3: החזרת מספרי עובדים של מחלקה מסוימת והמשכורת הממצועת של המחלקה כאשר הפמרטר הנקלט יכול להיות גם רשימה של מחלקות
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/1f1ed225-e4fa-4e7d-ba3c-cd39f538edb7)
+
+לדוגמא כאשר נכניס את המחלקות מכירות ושיווק:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/e4d591d2-ac23-46e1-85a3-5f24c0b000f8)
+
+שאילתה 4: קבלת שם משרה והחזרה של המשכורת המינימלית והמקסימלית שמקבלים במשרה הזו( כמובן על סמך העובדים שעובדים שם נכון לעת ביצוע הפעולה..)
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/aa3dee54-b6f4-4dd2-aa00-1edfa868d948)
+
+לדוגמא כאשר נכניס את המשרה של מפקח:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/74b7ee49-3387-4420-a433-aeca3edebede)
+
 
 ## אילוצים
 נבצע אילוצים שונים ולאחר מכן לכל אילוץ נראה שבאמת מקיימת הודעת שגיאה שמנסים לסתור את האילוץ
