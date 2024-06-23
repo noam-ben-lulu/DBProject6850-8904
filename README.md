@@ -598,18 +598,31 @@ END;
 
 DECLARE
     development_id NUMBER;
+    
     employee_id NUMBER;
+    
     current_department_id NUMBER;
+    
     target_department_id NUMBER;
+    
     emp_dev_cursor SYS_REFCURSOR;
+    
     emp_id Employee.EmployeeID%TYPE;
+    
     first_name Employee.First_Name%TYPE;
+    
     last_name Employee.Last_Name%TYPE;
+    
     salary Employee.salary%TYPE;
+    
     department_id Employee.DepartmentID%TYPE;
+    
     total_salary NUMBER;
+    
     make_changes CHAR(1);
+    
     show_details  CHAR(1);
+    
     
     CURSOR development_cursor IS
         SELECT DevelopmentID FROM Development;
