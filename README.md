@@ -589,4 +589,140 @@ END;
 
 ## תוכנית שנייה:
 
-ל
+התוכנית הנוכחית נועדה לנהל הקצאות יוזמות פיתוח (Development) של עובדים בתוך הארגון. התוכנית עושה שימוש בפונקציה ובפרוצדורה כדי לקבל מידע על עובדים ולבצע שינויים במידת הצורך. כלומר אנחנו על ידי התוכנית שלנו נוכל לדעת גם מה המצב של הפיתוחים שלנו מי העובדים שקיימים שם וכמה בעצם אנחנן מוציאים על הפיתוח הזה כסף (מוגדר להיות סכום המשכורות של העובדים המשתתפים) ובעצם השימוש שלנו בפונקציה הוא לקבלת הפרטים של העובדים והדפסת על ידי הcursor שמוחזר והשימוש בפרוצדורה הוא במידה ונרצה לעדכן עובדים מסוימים כלומר להזיז אותם מפיתוח כזה או אחר או אפילו למחוק אותם מהעבודה על הפיתוח כלומר למחוק אותם מבסיס הנתונים נוכל לבצע את זה בתוכנית שלנו
+
+נספק כעת את קוד התוכנית הראשית ואת קוד הפונקציה והפרוצדורה
+
+תוכנית ראשית:
+
+
+DECLARE
+    development_id NUMBER;
+    employee_id NUMBER;
+    current_department_id NUMBER;
+    target_department_id NUMBER;
+    emp_dev_cursor SYS_REFCURSOR;
+    emp_id Employee.EmployeeID%TYPE;
+    first_name Employee.First_Name%TYPE;
+    last_name Employee.Last_Name%TYPE;
+    salary Employee.salary%TYPE;
+    department_id Employee.DepartmentID%TYPE;
+    total_salary NUMBER;
+    make_changes CHAR(1);
+    show_details  CHAR(1);
+    
+    CURSOR development_cursor IS
+        SELECT DevelopmentID FROM Development;
+
+BEGIN
+    DBMS_OUTPUT.ENABLE(1000000);
+    -- שאלת המשתמש אם הוא רוצה לבצע שינויים
+    make_changes := '&Make_Changes';
+    
+    IF make_changes = 'Y' THEN
+       DBMS_OUTPUT.PUT_LINE('wanna make changes');
+        -- בקשת פרטי העברת עובד
+        employee_id := &Enter_Employee_ID;
+        current_department_id := &Enter_Current_Department_ID;
+        target_department_id := &Enter_Target_Department_ID;
+
+        IF employee_id IS NOT NULL AND current_department_id IS NOT NULL AND target_department_id IS NOT NULL THEN
+            ReassignEmployeeToDevelopment(employee_id, current_department_id, target_department_id);
+        END IF;
+    END IF;
+    show_details := '&show_details';
+   IF show_details = 'Y' THEN
+        DBMS_OUTPUT.PUT_LINE('Starting to manage development assignments.');
+
+        -- לולאה על כל יוזמות הפיתוח
+        FOR dev_record IN development_cursor LOOP
+            development_id := dev_record.DevelopmentID;
+
+            -- קבלת רשימת העובדים וסכום המשכורות ליוזמת הפיתוח
+            emp_dev_cursor := GetEmployeesByDevelopment(development_id);
+            DBMS_OUTPUT.PUT_LINE('Employees in Development ' || development_id || ':');
+            
+            total_salary := 0; -- אתחול סכום המשכורות
+
+            -- שליפת פרטי העובדים והדפסתם
+            LOOP
+                FETCH emp_dev_cursor INTO emp_id, first_name, last_name, salary, department_id;
+                EXIT WHEN emp_dev_cursor%NOTFOUND;
+                DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_id || ', Name: ' || first_name || ' ' || last_name || ', Salary: ' || salary || ', Department ID: ' || department_id);
+                total_salary := total_salary + salary; -- חישוב סכום המשכורות
+            END LOOP;
+
+            -- הדפסת סכום המשכורות הכולל
+            DBMS_OUTPUT.PUT_LINE('Total Salary for Development ' || development_id || ': ' || total_salary);
+
+            -- סגירת הקורסור
+            CLOSE emp_dev_cursor;
+            
+            -- ריקון המאגר לאחר כל איטרציה של הלולאה
+            DBMS_OUTPUT.NEW_LINE;
+        END LOOP;
+    END IF;
+    
+
+    
+
+    DBMS_OUTPUT.PUT_LINE('Finished managing development assignments.');
+EXCEPTION
+    WHEN OTHERS THEN 
+        DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+END;
+
+פונקציה:
+
+
+CREATE OR REPLACE FUNCTION GetEmployeesByDevelopment(development_id NUMBER) 
+RETURN SYS_REFCURSOR 
+IS
+    emp_dev_ref_cursor SYS_REFCURSOR; -- Ref Cursor to return employee data
+BEGIN
+    OPEN emp_dev_ref_cursor FOR
+        SELECT e.EmployeeID, e.First_Name, e.Last_Name, e.salary, e.DepartmentID
+        FROM Employee e
+        JOIN Development d ON e.DepartmentID = d.departmentID
+        WHERE d.DevelopmentID = development_id;
+    RETURN emp_dev_ref_cursor;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Error in GetEmployeesByDevelopment: ' || SQLERRM);
+        RETURN NULL;
+END;
+/
+
+
+פרוצדורה:
+
+CREATE OR REPLACE PROCEDURE ReassignEmployeeToDevelopment(
+    employee_id NUMBER,
+    current_department_id NUMBER,
+    target_department_id NUMBER
+) 
+IS
+BEGIN
+    -- אם מחלקת היעד שווה למחלקה הנוכחית, מחיקת העובד
+    IF target_department_id = current_department_id THEN
+        DELETE FROM Employee
+        WHERE EmployeeID = employee_id AND DepartmentID = current_department_id;
+        DBMS_OUTPUT.PUT_LINE('Employee ID: ' || employee_id || ' has been deleted from Department ID: ' || current_department_id);
+    ELSE
+        -- אחרת, עדכון מחלקת היעד
+        UPDATE Employee
+        SET DepartmentID = target_department_id
+        WHERE EmployeeID = employee_id AND DepartmentID = current_department_id;
+        DBMS_OUTPUT.PUT_LINE('Employee ID: ' || employee_id || ' has been reassigned from Department ID: ' || current_department_id || ' to Department ID: ' || target_department_id);
+    END IF;
+
+    -- אישור השינויים
+    COMMIT;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Error in ReassignEmployeeToDevelopment: ' || SQLERRM);
+        ROLLBACK; -- ביטול השינויים במקרה של שגיאה
+END;
+/
+
+## סוף שלב ג
