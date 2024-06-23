@@ -825,6 +825,37 @@ EXCEPTION
         
 END;
 
+כמו שניתן לראות הקוד לא עולה בצורה טובה אבל כמובן שיש את הקוד בקובץ SQL כמו שצריך בגיט תחת תיקיה ששמה שלב ג
+
+כעת נראה שהתוכנית באמת עובדת נראה שתי דוגמאות 
+1. העברת עובד מחלקה
+2. מחיקת עובד
+
+   נתחיל עם הדוגמא הראשונה: נעביר את עובד מספר 99999 ממחלקה 1 למחלקה 168
+
+לפני:
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/3b244642-8d99-417b-8d3d-64c5cd2140d3)
+
+נבחר את זה שאנחנו רוצים באמת לבצע שינויים בארגון וגם נבחר לראות את כל הפרטים על המחלקות וכו לאחר העדכון
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/8ab5c083-5ea4-4ee0-9bf1-84ec62736aeb)
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/91e90aae-e5ac-4b33-9f3e-f3ce8feab6a9)
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/f63697ec-9e5e-41ae-9c99-dc7ad8b3afc0)
+
+ובאמת קרה העדכון והעובד עבר מחלקה
+עכשיו נמחק את העובד  לשם כך נגדיר את מחלקת היעד כאותו ערך של מחלקת המקור נבחר לא להציג את כל הפרטים לשם נוחות
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/5b4435c4-eb13-4079-853a-1d7266fe126e)
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/f3829024-1ad2-49d1-a8a8-2af68522355e)
+
+![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/4ae14c2d-2f3b-496e-8703-a9f67de43eb1)
+
+ובאמת העדכון התבצע
+כלומר הראנו שהתוכנית עובדת
 
 
 ## סוף שלב ג
