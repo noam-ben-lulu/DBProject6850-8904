@@ -415,3 +415,153 @@ the csv files created by mockaroo
 בדיקה שהאילוץ מתקיים:
 ![image](https://github.com/noam-ben-lulu/DBProject6850-8904/assets/128416447/eafe090f-af26-4144-857f-8075adfda316)
 
+## שלב 3:
+
+# תוכנית ראשונה:
+בעצם יש לנו פונקציה שבה אנחנו מקבלים את הנתונים על כל העובדים הנמצאים במחלקה הנתונים הם מספר עובד משכורת ווותק ובנוסף יש לנו פרוצדורה שמעדכנת לכל עובד במחלקה הזו את המשכורת שלה להיות משופרת בהתאם לותק שלו ככל השותק גבוה יותר כך גם המשכורת כמובן. בתוכנית שלנו אנחנו רצים על כל המחלקות בבסיס הנתוניים שקיימים בהם עובדים ומעדכנים לכל אחד את המשכורת אנחנו מקבלים מהמשתמש שיכול להיות במקרה שלנו הבנק מה הוא המשכורת ההתחלתית של כל עובד ולאחר מכן אנחנו שולחים את זה לפרוצדורה שמקבל את הCURSOR הנוצר מהפונקציה שמכילה את פרטי העובדים ועושה שם עדכונים בעצם התוכנית שלנו בשיתוף פעולה עם הפונקציה והפרוצדורה אחראית על עדכוני המשכורות של העובדים כך שלדוגמא בתחילת כל שנה אזרחית חדשה כלומר בראשון לינואר נריץ שאילתה אחת של עדכון של הותק של כל העובדים שיעלה ב-1 ולאחר מכן נריץ את התוכנית שלנו ונעדכן את המשכורות של העובדים כמובן שלא כל שנה המשכורת מתעדכנת אלא לפי ההסתעפות הקיימת בפונקציה
+
+כעת נספק את הקודים של התוכנית הראשית לאחר מכן נספק תמונה של הפונקציה והפרודצורה כמובן שאת הקוד עצמו מסופק בגיט בתוך התיקייה בשלב ג
+
+תוכנית ראשית:
+
+DECLARE
+    dept_id NUMBER;
+    base_salary NUMBER := &Enter_Base_Salary;
+    emp_cursor SYS_REFCURSOR;
+    emp_id Employee.EmployeeID%TYPE;
+    salary Employee.Salary%TYPE;
+    seniority Employee.Seniority%TYPE;
+    has_employees BOOLEAN := FALSE;
+    
+    CURSOR dept_cursor IS
+        SELECT departmentID FROM department;
+    
+BEGIN
+    DBMS_OUTPUT.ENABLE(1000000);
+    DBMS_OUTPUT.PUT_LINE('Starting the main: Update all the salaries in the database.');
+
+    -- לולאה על כל המחלקות
+    FOR dept_record IN dept_cursor LOOP
+        dept_id := dept_record.departmentID;
+
+        -- קריאה לפונקציה GetEmployeesByDepartment
+        emp_cursor := GetEmployeesByDepartment(dept_id);
+        has_employees := FALSE;  -- אתחול המשתנה לכל מחלקה חדשה
+
+        -- סריקת ה-cursor והדפסת נתונים
+        LOOP
+            FETCH emp_cursor INTO emp_id, salary, seniority;
+            EXIT WHEN emp_cursor%NOTFOUND;
+            IF NOT has_employees THEN
+                DBMS_OUTPUT.PUT_LINE('Employees in Department ' || dept_id || ':');
+                has_employees := TRUE;
+            END IF;
+            DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_id || ', Salary: ' || salary || ', Seniority: ' || seniority);
+        END LOOP;
+
+        -- סגור את ה-cursor כדי למנוע שגיאות בעת קריאה לפרוצדורה
+        CLOSE emp_cursor;
+
+        -- אם יש עובדים במחלקה, קריאה לפרוצדורה לעדכון המשכורות
+        IF has_employees THEN
+            emp_cursor := GetEmployeesByDepartment(dept_id);
+
+            -- קריאה לפרוצדורה UpdateEmployeeSalariesWithCursor
+            UpdateEmployeeSalariesWithCursor(emp_cursor, base_salary); -- Update salary based on seniority and base salary
+
+            DBMS_OUTPUT.PUT_LINE('Employee salaries updated for Department ' || dept_id || '.');
+        ELSE
+            DBMS_OUTPUT.PUT_LINE('No employees found in Department ' || dept_id || '.');
+        END IF;
+    END LOOP;
+    
+EXCEPTION
+    WHEN OTHERS THEN 
+        DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+END;
+/
+
+
+
+
+פונקציה:
+CREATE OR REPLACE FUNCTION GetEmployeesByDepartment(dept_id NUMBER) 
+RETURN SYS_REFCURSOR 
+IS
+    emp_ref_cursor SYS_REFCURSOR; -- Ref Cursor to return employee data
+BEGIN
+    
+
+    OPEN emp_ref_cursor FOR
+          SELECT EmployeeID, Salary, Seniority 
+        FROM Employee 
+        WHERE DepartmentID = dept_id;
+        
+    
+    RETURN emp_ref_cursor;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Error in GetEmployeesByDepartment: ' || SQLERRM);
+        RETURN NULL;
+END;
+
+
+פרוצדורה:
+
+CREATE OR REPLACE PROCEDURE UpdateEmployeeSalariesWithCursor(
+    emp_ref_cursor SYS_REFCURSOR,
+    base_salary NUMBER
+) 
+IS
+    
+    emp_id Employee.EmployeeID%TYPE;
+    salary Employee.Salary%TYPE;
+    seniority Employee.Seniority%TYPE;
+    new_salary Employee.Salary%TYPE;
+BEGIN
+
+    
+    
+    LOOP
+        FETCH emp_ref_cursor INTO emp_id, salary, seniority;
+        EXIT WHEN emp_ref_cursor%NOTFOUND;
+        
+        
+        
+        -- Update salary based on seniority
+        IF seniority BETWEEN 1 AND 3 THEN
+            new_salary := base_salary;
+        ELSIF seniority BETWEEN 4 AND 7 THEN
+            new_salary := base_salary * 1.15;
+        ELSIF seniority BETWEEN 8 AND 15 THEN
+            new_salary := base_salary * 1.25;
+        ELSIF seniority BETWEEN 16 AND 22 THEN
+            new_salary := base_salary * 1.33;
+        ELSIF seniority BETWEEN 23 AND 29 THEN
+            new_salary := base_salary * 1.4;
+        ELSIF seniority = 30 THEN
+            new_salary := base_salary * 1.5;
+        END IF;
+        
+        -- Update the employee's salary
+        UPDATE Employee
+        SET salary = new_salary
+        WHERE EmployeeID = emp_id;
+        
+        DBMS_OUTPUT.PUT_LINE('Updated salary for Employee ID: ' || emp_id || ' to ' || new_salary);
+    END LOOP;
+    
+    -- Close the cursor
+    CLOSE emp_ref_cursor;
+
+
+    -- Commit the changes
+    COMMIT;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+        ROLLBACK; -- Rollback in case of error
+END;
+/
+
+
