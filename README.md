@@ -597,6 +597,7 @@ END;
 
 
 DECLARE
+
     development_id NUMBER;
     
     employee_id NUMBER;
@@ -629,16 +630,20 @@ DECLARE
     
         SELECT DevelopmentID FROM Development;
         
+        
 
 BEGIN
+
 
     DBMS_OUTPUT.ENABLE(1000000);
     
     
     make_changes := '&Make_Changes';
+
     
     
     IF make_changes = 'Y' THEN
+
     
        DBMS_OUTPUT.PUT_LINE('wanna make changes');
        
@@ -659,6 +664,7 @@ BEGIN
     END IF;
     
     show_details := '&show_details';
+    
     
    IF show_details = 'Y' THEN
    
@@ -714,14 +720,20 @@ BEGIN
     
 
     DBMS_OUTPUT.PUT_LINE('Finished managing development assignments.');
+
     
 EXCEPTION
 
+
     WHEN OTHERS THEN 
     
+
+    
         DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+
         
 END;
+
 
 
 פונקציה:
