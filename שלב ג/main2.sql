@@ -1,4 +1,3 @@
-
 DECLARE
     development_id NUMBER;
     employee_id NUMBER;
@@ -10,7 +9,6 @@ DECLARE
     last_name Employee.Last_Name%TYPE;
     salary Employee.salary%TYPE;
     department_id Employee.DepartmentID%TYPE;
-    total_salary NUMBER;
     make_changes CHAR(1);
     show_details  CHAR(1);
     
@@ -19,12 +17,12 @@ DECLARE
 
 BEGIN
     DBMS_OUTPUT.ENABLE(1000000);
-    -- ωΰμϊ δξωϊξω ΰν δεΰ ψεφδ μαφς ωιπειιν
+    -- Χ©ΧΧΧª Χ”ΧΧ©ΧªΧΧ© ΧΧ Χ”Χ•Χ Χ¨Χ•Χ¦Χ” ΧΧ‘Χ¦ΧΆ Χ©Χ™Χ Χ•Χ™Χ™Χ
     make_changes := '&Make_Changes';
     
     IF make_changes = 'Y' THEN
        DBMS_OUTPUT.PUT_LINE('wanna make changes');
-        -- αχωϊ τψθι δςαψϊ ςεαγ
+        -- Χ‘Χ§Χ©Χª Χ¤Χ¨ΧΧ™ Χ”ΧΆΧ‘Χ¨Χª ΧΆΧ•Χ‘Χ“
         employee_id := &Enter_Employee_ID;
         current_department_id := &Enter_Current_Department_ID;
         target_department_id := &Enter_Target_Department_ID;
@@ -33,45 +31,30 @@ BEGIN
             ReassignEmployeeToDevelopment(employee_id, current_department_id, target_department_id);
         END IF;
     END IF;
+    
     show_details := '&show_details';
-   IF show_details = 'Y' THEN
+    
+    IF show_details = 'Y' THEN
         DBMS_OUTPUT.PUT_LINE('Starting to manage development assignments.');
 
-        -- μεμΰδ ςμ λμ ιεζξεϊ δτιϊεη
+        -- ΧΧ•ΧΧΧ” ΧΆΧ Χ›Χ Χ™Χ•Χ–ΧΧ•Χª Χ”Χ¤Χ™ΧªΧ•Χ—
         FOR dev_record IN development_cursor LOOP
             development_id := dev_record.DevelopmentID;
 
-            -- χαμϊ ψωιξϊ δςεαγιν ερλεν δξωλεψεϊ μιεζξϊ δτιϊεη
+            -- Χ§Χ‘ΧΧª Χ¨Χ©Χ™ΧΧª Χ”ΧΆΧ•Χ‘Χ“Χ™Χ Χ•Χ΅Χ›Χ•Χ Χ”ΧΧ©Χ›Χ•Χ¨Χ•Χª ΧΧ™Χ•Χ–ΧΧª Χ”Χ¤Χ™ΧªΧ•Χ—
             emp_dev_cursor := GetEmployeesByDevelopment(development_id);
-            DBMS_OUTPUT.PUT_LINE('Employees in Development ' || development_id || ':');
             
-            total_salary := 0; -- ΰϊηεμ ρλεν δξωλεψεϊ
-
-            -- ωμιτϊ τψθι δςεαγιν εδγτρϊν
-            LOOP
-                FETCH emp_dev_cursor INTO emp_id, first_name, last_name, salary, department_id;
-                EXIT WHEN emp_dev_cursor%NOTFOUND;
-                DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_id || ', Name: ' || first_name || ' ' || last_name || ', Salary: ' || salary || ', Department ID: ' || department_id);
-                total_salary := total_salary + salary; -- ηιωεα ρλεν δξωλεψεϊ
-            END LOOP;
-
-            -- δγτρϊ ρλεν δξωλεψεϊ δλεμμ
-            DBMS_OUTPUT.PUT_LINE('Total Salary for Development ' || development_id || ': ' || total_salary);
-
-            -- ρβιψϊ δχεψρεψ
+            -- Χ΅Χ’Χ™Χ¨Χª Χ”Χ§Χ•Χ¨Χ΅Χ•Χ¨
             CLOSE emp_dev_cursor;
-            
-            -- ψιχεο δξΰβψ μΰηψ λμ ΰιθψφιδ ωμ δμεμΰδ
+
+            -- Χ¨Χ™Χ§Χ•Χ Χ”ΧΧΧ’Χ¨ ΧΧΧ—Χ¨ Χ›Χ ΧΧ™ΧΧ¨Χ¦Χ™Χ” Χ©Χ Χ”ΧΧ•ΧΧΧ”
             DBMS_OUTPUT.NEW_LINE;
         END LOOP;
     END IF;
     
-
-    
-
     DBMS_OUTPUT.PUT_LINE('Finished managing development assignments.');
 EXCEPTION
     WHEN OTHERS THEN 
         DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
 END;
-
+/
