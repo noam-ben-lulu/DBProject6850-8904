@@ -424,108 +424,142 @@ the csv files created by mockaroo
 
 תוכנית ראשית:
 
+
 DECLARE
+
     dept_id NUMBER;
-    base_salary NUMBER := &Enter_Base_Salary;
-    emp_cursor SYS_REFCURSOR;
-    emp_id Employee.EmployeeID%TYPE;
-    salary Employee.Salary%TYPE;
-    seniority Employee.Seniority%TYPE;
-    has_employees BOOLEAN := FALSE;
     
+    base_salary NUMBER := &Enter_Base_Salary;
+    
+    emp_cursor SYS_REFCURSOR;
+    
+
     CURSOR dept_cursor IS
+    
         SELECT departmentID FROM department;
+        
     
 BEGIN
+
     DBMS_OUTPUT.ENABLE(1000000);
+    
     DBMS_OUTPUT.PUT_LINE('Starting the main: Update all the salaries in the database.');
+    
 
     -- לולאה על כל המחלקות
+    
     FOR dept_record IN dept_cursor LOOP
+    
         dept_id := dept_record.departmentID;
+        
 
         -- קריאה לפונקציה GetEmployeesByDepartment
+        
         emp_cursor := GetEmployeesByDepartment(dept_id);
-        has_employees := FALSE;  -- אתחול המשתנה לכל מחלקה חדשה
+        
 
-        -- סריקת ה-cursor והדפסת נתונים
-        LOOP
-            FETCH emp_cursor INTO emp_id, salary, seniority;
-            EXIT WHEN emp_cursor%NOTFOUND;
-            IF NOT has_employees THEN
-                DBMS_OUTPUT.PUT_LINE('Employees in Department ' || dept_id || ':');
-                has_employees := TRUE;
-            END IF;
-            DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_id || ', Salary: ' || salary || ', Seniority: ' || seniority);
-        END LOOP;
+        -- קריאה לפרוצדורה לעדכון המשכורות
+        
+        UpdateEmployeeSalariesWithCursor(emp_cursor, base_salary); -- Update salary based on seniority and base salary
+        
 
-        -- סגור את ה-cursor כדי למנוע שגיאות בעת קריאה לפרוצדורה
-        CLOSE emp_cursor;
-
-        -- אם יש עובדים במחלקה, קריאה לפרוצדורה לעדכון המשכורות
-        IF has_employees THEN
-            emp_cursor := GetEmployeesByDepartment(dept_id);
-
-            -- קריאה לפרוצדורה UpdateEmployeeSalariesWithCursor
-            UpdateEmployeeSalariesWithCursor(emp_cursor, base_salary); -- Update salary based on seniority and base salary
-
-            DBMS_OUTPUT.PUT_LINE('Employee salaries updated for Department ' || dept_id || '.');
-        ELSE
-            DBMS_OUTPUT.PUT_LINE('No employees found in Department ' || dept_id || '.');
-        END IF;
+        DBMS_OUTPUT.PUT_LINE('Employee salaries updated for Department ' || dept_id || '.');
+        
     END LOOP;
     
+    
 EXCEPTION
+
     WHEN OTHERS THEN 
+    
         DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+        
 END;
+
 /
 
 
 
 
+
 פונקציה:
+
 CREATE OR REPLACE FUNCTION GetEmployeesByDepartment(dept_id NUMBER) 
+
 RETURN SYS_REFCURSOR 
+
 IS
+
     emp_ref_cursor SYS_REFCURSOR; -- Ref Cursor to return employee data
+    
     emp_id Employee.EmployeeID%TYPE;
+    
     salary Employee.Salary%TYPE;
+    
     seniority Employee.Seniority%TYPE;
+    
     has_employees BOOLEAN := FALSE;
+    
 BEGIN
+
     OPEN emp_ref_cursor FOR
+    
         SELECT EmployeeID, Salary, Seniority 
+        
         FROM Employee 
+        
         WHERE DepartmentID = dept_id;
+        
     
     -- הצגת העובדים הקיימים במחלקה
+    
     LOOP
+    
         FETCH emp_ref_cursor INTO emp_id, salary, seniority;
+        
         EXIT WHEN emp_ref_cursor%NOTFOUND;
+        
         IF NOT has_employees THEN
+        
             DBMS_OUTPUT.PUT_LINE('Employees in Department ' || dept_id || ':');
+            
             has_employees := TRUE;
+            
         END IF;
+        
         DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_id || ', Salary: ' || salary || ', Seniority: ' || seniority);
+        
     END LOOP;
+    
     
     -- סגירת ה-cursor כדי שנוכל לפתוח אותו שוב להחזרה
     CLOSE emp_ref_cursor;
+    
 
     -- פתיחת ה-cursor שוב להחזרה
     OPEN emp_ref_cursor FOR
+    
         SELECT EmployeeID, Salary, Seniority 
+
+        
         FROM Employee 
+        
         WHERE DepartmentID = dept_id;
+        
     
     RETURN emp_ref_cursor;
+    
 
 EXCEPTION
+
     WHEN OTHERS THEN
+    
         DBMS_OUTPUT.PUT_LINE('Error in GetEmployeesByDepartment: ' || SQLERRM);
+        
         RETURN NULL;
+        
 END;
+
 /
 
 
@@ -642,36 +676,29 @@ DECLARE
     
     department_id Employee.DepartmentID%TYPE;
     
-    total_salary NUMBER;
-    
     make_changes CHAR(1);
     
     show_details  CHAR(1);
-    
     
     
     CURSOR development_cursor IS
     
         SELECT DevelopmentID FROM Development;
         
-        
 
 BEGIN
 
-
     DBMS_OUTPUT.ENABLE(1000000);
     
-    
+    -- שאלת המשתמש אם הוא רוצה לבצע שינויים
     make_changes := '&Make_Changes';
-
     
     
     IF make_changes = 'Y' THEN
-
     
        DBMS_OUTPUT.PUT_LINE('wanna make changes');
        
-      
+        -- בקשת פרטי העברת עובד
         employee_id := &Enter_Employee_ID;
         
         current_department_id := &Enter_Current_Department_ID;
@@ -687,52 +714,34 @@ BEGIN
         
     END IF;
     
+    
     show_details := '&show_details';
     
     
-   IF show_details = 'Y' THEN
-   
+    IF show_details = 'Y' THEN
+    
         DBMS_OUTPUT.PUT_LINE('Starting to manage development assignments.');
         
 
-       
+        -- לולאה על כל יוזמות הפיתוח
+        
         FOR dev_record IN development_cursor LOOP
         
             development_id := dev_record.DevelopmentID;
             
 
-          
+           
+            -- קבלת רשימת העובדים וסכום המשכורות ליוזמת הפיתוח
             emp_dev_cursor := GetEmployeesByDevelopment(development_id);
             
-            DBMS_OUTPUT.PUT_LINE('Employees in Development ' || development_id || ':');
             
-            
-            total_salary := 0; 
+          
+            -- סגירת הקורסור
+            CLOSE emp_dev_cursor;
             
 
            
-            LOOP
-            
-                FETCH emp_dev_cursor INTO emp_id, first_name, last_name, salary, department_id;
-                
-                EXIT WHEN emp_dev_cursor%NOTFOUND;
-                
-                DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_id || ', Name: ' || first_name || ' ' || last_name || ', Salary: ' || salary || ', Department ID: ' || department_id);
-                
-                total_salary := total_salary + salary;
-                
-            END LOOP;
-            
-
-          
-            DBMS_OUTPUT.PUT_LINE('Total Salary for Development ' || development_id || ': ' || total_salary);
-            
-
-      
-            CLOSE emp_dev_cursor;
-            
-            
-      
+            -- ריקון המאגר לאחר כל איטרציה של הלולאה
             DBMS_OUTPUT.NEW_LINE;
             
         END LOOP;
@@ -740,83 +749,125 @@ BEGIN
     END IF;
     
     
-
-    
-
     DBMS_OUTPUT.PUT_LINE('Finished managing development assignments.');
-
     
 EXCEPTION
 
-
-    WHEN OTHERS THEN 
-    
-
+    WHEN OTHERS THEN
     
         DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
-
         
 END;
+
+/
+
+
+
 
 
 
 פונקציה:
 
 
-CREATE OR REPLACE FUNCTION GetEmployeesByDevelopment(development_id NUMBER) 
-RETURN SYS_REFCURSOR 
+CREATE OR REPLACE FUNCTION GetEmployeesByDevelopment(development_id NUMBER)
+
+RETURN SYS_REFCURSOR
+
 IS
+
     emp_dev_ref_cursor SYS_REFCURSOR; -- Ref Cursor to return employee data
+    
     emp_id Employee.EmployeeID%TYPE;
+    
     first_name Employee.First_Name%TYPE;
+    
     last_name Employee.Last_Name%TYPE;
+    
     salary Employee.salary%TYPE;
+    
     department_id Employee.DepartmentID%TYPE;
+
     total_salary NUMBER := 0;
+    
     has_employees BOOLEAN := FALSE;
+    
 BEGIN
+
     OPEN emp_dev_ref_cursor FOR
+    
         SELECT e.EmployeeID, e.First_Name, e.Last_Name, e.salary, e.DepartmentID
+        
         FROM Employee e
+        
         JOIN Development d ON e.DepartmentID = d.departmentID
+        
         WHERE d.DevelopmentID = development_id;
+        
     
     -- הצגת העובדים הקיימים ביוזמת הפיתוח וחישוב סכום המשכורות
+   
     LOOP
+    
         FETCH emp_dev_ref_cursor INTO emp_id, first_name, last_name, salary, department_id;
+        
         EXIT WHEN emp_dev_ref_cursor%NOTFOUND;
+        
         IF NOT has_employees THEN
+        
             DBMS_OUTPUT.PUT_LINE('Employees in Development ' || development_id || ':');
+            
             has_employees := TRUE;
+            
         END IF;
+        
         DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_id || ', Name: ' || first_name || ' ' || last_name || ', Salary: ' || salary || ', Department ID: ' || department_id);
+        
         total_salary := total_salary + salary; -- חישוב סכום המשכורות
+        
     END LOOP;
+    
 
     -- סגירת ה-cursor כדי שנוכל לפתוח אותו שוב להחזרה
     CLOSE emp_dev_ref_cursor;
+    
 
     -- פתיחת ה-cursor שוב להחזרה
     OPEN emp_dev_ref_cursor FOR
+    
         SELECT e.EmployeeID, e.First_Name, e.Last_Name, e.salary, e.DepartmentID
+        
         FROM Employee e
+
         JOIN Development d ON e.DepartmentID = d.departmentID
+        
         WHERE d.DevelopmentID = development_id;
+        
 
     -- הדפסת סכום המשכורות הכולל אם יש עובדים
     IF has_employees THEN
+    
         DBMS_OUTPUT.PUT_LINE('Total Salary for Development ' || development_id || ': ' || total_salary);
+        
     ELSE
+    
         DBMS_OUTPUT.PUT_LINE('No employees found in Development ' || development_id || '.');
+        
     END IF;
 
+
     RETURN emp_dev_ref_cursor;
+    
 
 EXCEPTION
+
     WHEN OTHERS THEN
+    
         DBMS_OUTPUT.PUT_LINE('Error in GetEmployeesByDevelopment: ' || SQLERRM);
+        
         RETURN NULL;
+        
 END;
+
 /
 
 
