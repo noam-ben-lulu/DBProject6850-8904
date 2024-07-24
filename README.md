@@ -1053,7 +1053,8 @@ Employee (One) <-> Deposits (Many)
 
 קוד + פלט של השאילתה:
 
-![image](https://github.com/user-attachments/assets/5ac2b2a3-7852-4310-86ad-d650c4c9be64)
+![image](https://github.com/user-attachments/assets/d1a3a6c4-bfc3-4b11-afee-40001c4823f3)
+
 
 
 נעבור למבט על האגף שקיבלנו:
